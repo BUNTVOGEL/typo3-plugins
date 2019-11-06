@@ -1,0 +1,16 @@
+ .float-33{
+	width: 33%;
+}
+ .float-15{
+	width: 15%;
+}
+ .float-margin33{
+	margin: 0 33%;
+}
+.float-margin15{
+	margin: 0 15%;
+}
+.float-margin25margin0{
+	margin-left: 25%;
+	margin-right: 0;
+}

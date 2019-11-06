@@ -1,0 +1,61 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: infoa@t3sugarugar.info
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+lib.printheader = COA
+lib.printheader{
+   10 = TEXT
+   10.value = <img src="typo3conf/ext/t3sugar/resources/images/printlogo.jpg" title="printlogo"> TYPO3 Opensource CSS Framework © by Micha Barthel
+}
+lib.printfooter = COA
+lib.printfooter{
+   10 = TEXT
+   10.value = <img src="typo3conf/ext/t3sugar/resources/images/printlogo.jpg" title="printlogo"> TYPO3 Opensource CSS Framework © by Micha Barthel
+}
+lib.headerlogo = COA
+lib.headerlogo{
+   10 = TEXT
+   10.value =
+   20 = TEXT
+   20.data = getIndpEnv:TYPO3_SITE_URL
+   wrap = <a href="|" title="home"><img src="typo3conf/ext/t3sugar/resources/images/headerlogo.jpg" title="headerlogo"></a>
+   30 = TEXT
+   30.value =
+}
+lib.template = COA
+lib.template{
+    20 = TEMPLATE
+    20{
+      template =< {$lib.template.template}
+      template.content.templateType = main
+      workOnSubpart = {$lib.template.workOnSubpart}
+      subparts{
+         b1b1 < lib.headerlogo
+         b1b2 < {$lib.template.subparts.b1b2}
+         b2 < {$lib.template.subparts.b2}
+         b3b3 < {$lib.template.subparts.b3b3}
+         b3b2 < {$lib.template.subparts.b3b2}
+         b4 < {$lib.template.subparts.b4}
+         b5 < {$lib.template.subparts.b5}
+         printheader < lib.printheader
+         printfooter < lib.printfooter
+      }
+    }
+}

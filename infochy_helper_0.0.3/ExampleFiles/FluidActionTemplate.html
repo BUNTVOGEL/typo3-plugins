@@ -1,0 +1,19 @@
+<f:layout name="Default"/>
+
+<f:section name="main">
+	FeUser: {feUser.username}
+
+	// 1. Set form to -> enctype="multipart/form-data" (in action="update" AND action="create")
+	<f:form action="update" enctype="multipart/form-data" name="myData" object="{myData}">
+
+		// 2. Set Model Name myData to -> YOURs
+		// 3. Set ExtName to -> YOURs in partial
+		// 4. Look Example for Partel: FormFields.html
+		<f:render partial="ExtName/FormFields" arguments="{_all}"/>
+
+		<f:form.submit value="Save"/>
+
+	</f:form>
+
+
+</f:section>

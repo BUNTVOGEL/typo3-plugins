@@ -1,0 +1,17 @@
+.clear { display: inline-block; }
+/* How To Clear Floats Without Structural Markup
+  @see http://www.positioniseverything.net/easyclearing.html
+*/
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  width: 0;
+}
+/*  Hide from IE-mac + clear in float boxes for Safari browser */
+.clear { display: block }
+* html .clear { height: 1%; }
+/* clear for float boxes */
+.clear-ie { display: none }

@@ -1,0 +1,56 @@
+
+plugin.tx_infochycache_fluid {
+	view {
+		templateRootPaths.0 = {$plugin.tx_infochycache_fluid.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_infochycache_fluid.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_infochycache_fluid.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_infochycache_fluid.persistence.storagePid}
+	}
+}
+
+plugin.tx_infochycache_model {
+	view {
+		templateRootPaths.0 = {$plugin.tx_infochycache_model.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_infochycache_model.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_infochycache_model.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_infochycache_model.persistence.storagePid}
+	}
+}
+
+plugin.tx_infochycache._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-infochy-cache table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-infochy-cache table th {
+		font-weight:bold;
+	}
+
+	.tx-infochy-cache table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)

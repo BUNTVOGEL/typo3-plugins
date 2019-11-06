@@ -1,0 +1,47 @@
+/*  z-index
+  @see http://aplus.co.yu/lab/z-pos/
+  @see http://www.css-zibaldone.com/test/css21/absolute/centered-boxes-2/index.html
+*/
+ .floatbox-before{
+  width: 25%;
+  z-index: 3;
+  float: left;
+}
+ .floatbox-before .floatbox{
+ z-index: 4;
+}
+ .floatbox-after{
+  width: 25%;
+  z-index: 5;
+  float: right;
+}
+ .floatbox-after .floatbox{
+	z-index: 6;
+}
+ .floatbox-middle{
+  margin: 0 25%;
+  z-index: 1;
+  width:auto;
+}
+ .floatbox-middle .floatbox{
+	z-index: 2;
+}
+.floatbox-clear{
+	display: none;
+}
+/* nested boxes
+  @see http://www.parterremedia.de/csswork/css-box-modell/boxmodell-01.html
+  @see http://www.washington.edu/webinfo/snippets/css/boxmodel.html
+*/
+.floatbox{
+  position: relative;
+}
+/* clear float @see http://www.positioniseverything.net/explorer/peekaboo.html */
+.floatbox:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html .floatbox { height: 1%; }

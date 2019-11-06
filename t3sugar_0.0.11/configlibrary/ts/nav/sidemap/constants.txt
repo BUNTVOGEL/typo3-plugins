@@ -1,0 +1,44 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navSidemap {
+  # cat=t3sugar.enable; type=boolean; label=NavSidemap : EXT:t3sugar/configuration/TS/nav/sidemap
+	enableNavSidemap = 1
+  # cat=t3sugar.navSidemap; type=string; label=wrapCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   wrapCssClass = class="nav-sidemap"
+  # cat=t3sugar.navSidemap; type=string; label=NOCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   NOCssClass = class="nav-sidemap-no"
+  # cat=t3sugar.navSidemap; type=string; label=IFSUBCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   IFSUBCssClass = class="nav-sidemap-ifsub"
+  # cat=t3sugar.navSidemap; type=string; label=ACTCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   ACTCssClass = class="nav-sidemap-act"
+  # cat=t3sugar.navSidemap; type=string; label=CURCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   CURCssClass = class="nav-sidemap-cur"
+  # cat=t3sugar.navSidemap; type=string; label=CURIFSUBCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   CURIFSUBCssClass = class="nav-sidemap-curifsub"
+  # cat=t3sugar.navSidemap; type=string; label=entryLevel : EXT:t3sugar/configuration/TS/nav/sidemap
+   entryLevel = 1
+  # cat=t3sugar.navSidemap; type=text; label=navSubSecondLevel : EXT:t3sugar/configuration/TS/nav/sidemap
+   navSubSecondLevel = 2 < .1
+  # cat=t3sugar.navSidemap; type=text; label=navSubThirdLevel : EXT:t3sugar/configuration/TS/nav/sidemap
+   navSubThirdLevel = 3 < .1
+}

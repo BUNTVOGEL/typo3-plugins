@@ -1,0 +1,11 @@
+# cat=basic/enable; type=boolean; label=Set NO PageTSconfig
+setNoPageTSconfig = 0
+
+# cat=basic/enable; type=boolean; label=Set NO UserTSconfig
+setNoUserTSconfig = 0
+
+# cat=basic/enable; type=boolean; label=Set NO  Localconf
+setNoLocalconf = 0
+
+# cat=basic/enable; type=boolean; label=Set Cache for NO developer Mode
+cache = 0

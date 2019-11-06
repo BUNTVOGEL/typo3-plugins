@@ -1,0 +1,21 @@
+body {
+ /* set the layout center for ie */
+ text-align: center;
+ padding: 10px ;
+}
+.bodyout{
+ /* set the layout center for standart browser */
+ margin: 0 auto;
+ /* set the layout center for ie -> reset text align */
+ text-align: left;
+}
+.bodyin{
+ background: #fff;
+ border: 10px #fff solid;
+}
+.bodybox{
+  background: #fff;
+  clear:both;
+  width:auto;
+}
+

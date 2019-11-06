@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-12-24T23:40:14Z" product-name="infochy_multilang">
+		<header/>
+		<body>
+			<trans-unit id="tx_infochy_multilang_domain_model_model">
+				<source>Extbase Multilanguage</source>
+			</trans-unit>
+			<trans-unit id="tx_infochy_multilang_domain_model_model.description">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_infochymultilang_domain_model_data">
+				<source>Data</source>
+			</trans-unit>
+			<trans-unit id="tx_infochymultilang_domain_model_data.title">
+				<source>Title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

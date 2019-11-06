@@ -1,0 +1,29 @@
+.float-boxes-middleout{
+  z-index: 1;
+  width:auto;
+}
+.float-boxes-leftout{
+  z-index: 3;
+  float: left;
+}
+.float-boxes-rightout{
+  z-index: 5;
+  float: right;
+}
+.float-boxes-middlein, .float-boxes-leftin, .float-boxes-rightin{
+  position: relative;
+}
+.float-boxes-middlein{
+  z-index: 2;
+}
+.float-boxes-leftin{
+  z-index: 4;
+}
+.float-boxes-rightin{
+  z-index: 6;
+}
+
+
+
+
+

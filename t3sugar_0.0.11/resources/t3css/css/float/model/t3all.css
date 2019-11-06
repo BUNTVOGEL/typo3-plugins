@@ -1,0 +1,60 @@
+.float-model-leftout{
+  width: 25%;
+  z-index: 3;
+  float: left;
+}
+.float-model-leftin{
+ padding: 10px 10px 10px 20px;
+ z-index: 4;
+}
+.float-model-rightout{
+  width: 25%;
+  z-index: 5;
+  float: right;
+}
+.float-model-rightin{
+	padding: 10px 20px 10px 10px;
+	z-index: 6;
+}
+.float-model-middleout{
+  margin: 0 25%;
+  z-index: 1;
+  width:auto;
+}
+.float-model-middlein{
+	padding:10px;
+	z-index: 2;
+}
+.float-model-clear{
+	display: none;
+}
+.float-model-33{
+	width: 33%;
+}
+.float-model-15{
+	width: 15%;
+}
+.float-model-margin33{
+	margin: 0 33%;
+}
+.float-model-margin15{
+	margin: 0 15%;
+}
+.float-model-nopadding{
+	padding: 0;
+}
+.float-model-middlein, .float-model-leftin, .float-model-rightin{
+  position: relative;
+}
+
+.float-model-middlein,.float-model-leftin,.float-model-rightin { display: inline-block; }
+.float-model-middlein:after,.float-model-leftin:after.float-model-rightin:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.float-model-middlein,.float-model-leftin,.float-model-rightin { display: block }
+* html .float-model-middlein,.float-model-leftin,.float-model-rightin { height: 1%; }
+

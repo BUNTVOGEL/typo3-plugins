@@ -1,0 +1,3 @@
+/*  italic bug in by ie5,ie6 */
+* html iframe, * html frame { overflow:auto; }
+* html frameset { overflow:hidden; }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-11-18T18:39:14Z" product-name="infochy_content">
+		<header/>
+		<body>
+			<trans-unit id="header.description">
+				<source>header</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

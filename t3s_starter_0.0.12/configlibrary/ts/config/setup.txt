@@ -1,0 +1,94 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+config{
+	doctype =  {$config.doctype}
+	xmlprologue =  {$config.xmlprologue}
+	no_cache = {$config.no_cache}
+	disableImgBorderAttr =  {$config.disableImgBorderAttr}
+	index_enable =  {$config.index_enable}
+	baseURL = {$config.baseURL}
+	absRefPrefix = {$config.absRefPrefix}
+  spamProtectEmailAddresses =  {$config.spamProtectEmailAddresses}
+  spamProtectEmailAddresses_atSubst =  {$config.spamProtectEmailAddresses_atSubst}
+  disablePrefixComment =  {$config.disablePrefixComment}
+  extTarget =  {$config.extTarget}
+  linkVars = {$config.linkVars}
+  pageTitleFirst = {$config.pageTitleFirst}
+  xhtml_cleaning =  {$config.xhtml_cleaning}
+  doctypeSwitch = {$config.doctypeSwitch}
+  removeDefaultJS =  {$config.removeDefaultJS}
+  inlineStyle2TempFile =  {$config.inlineStyle2TempFile}
+  disablePrefixComment =  {$config.disablePrefixComment}
+  notification_email_urlmode =  {$config.notification_email_urlmode}
+  tx_realurl_enable =  {$config.tx_realurl_enable}
+  simulateStaticDocuments_pEnc_onlyP = {$config.simulateStaticDocuments_pEnc_onlyP}
+  sys_language_content =  {$config.sys_language_content}
+  sys_language_contentOL =  {$config.sys_language_contentOL}
+  simulateStaticDocuments =  {$config.simulateStaticDocuments}
+}
+
+## config: config. language 0
+## path: config -> EXT:t3s_starter/typo3config/TS/config
+config{
+  sys_language_uid = 0
+  language = {$config.language00}
+  locale_all = {$config.locale_all00}
+  htmlTag_langKey = {$config.htmlTag_langKey00}
+  sys_language_mode = {$config.sys_language_mode00}
+}
+
+## config: config. language 1
+## path: config -> EXT:t3s_starter/configuration/TS/config
+[globalVar = GP:L = 1]
+config{
+  sys_language_uid = 1
+  language = {$config.language01}
+  locale_all = {$config.locale_all01}
+  htmlTag_langKey = {$config.htmlTag_langKey01}
+  sys_language_mode = {$config.sys_language_mode01}
+}
+[global]
+
+## config: config. language 2
+## path: config -> EXT:t3s_starter/configuration/TS/config
+[globalVar = GP:L = 2]
+config{
+  sys_language_uid = 2
+  language = {$config.language02}
+  locale_all =  {$config.locale_all02}
+  htmlTag_langKey = {$config.htmlTag_langKey02}
+  sys_language_mode = {$config.sys_language_mode02}
+}
+[global]
+
+## config: config. language 3
+## path: config -> EXT:t3s_starter/configuration/TS/config
+[globalVar = GP:L = 3]
+config{
+  sys_language_uid = 3
+  language = {$config.language03}
+  locale_all =  {$config.locale_all03}
+  htmlTag_langKey = {$config.htmlTag_langKey03}
+  sys_language_mode = {$config.sys_language_mode03}
+}
+[global]

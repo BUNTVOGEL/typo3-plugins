@@ -1,0 +1,36 @@
+
+.nav-root{
+ position:absolute;
+ bottom: 8px;
+ left: 38px;
+ z-index:99;
+}
+.nav-root ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+.nav-root ul li{
+	float:left;
+	padding: 5px 5px 5px 5px;
+	-moz-opacity:0.85;
+	filter:Alpha(opacity=85, finishopacity=0, style=0);
+}
+.nav-root ul li a{
+  display: block;
+	padding: 5px 9px 5px 9px;
+	background: #ffffff;
+	color: #eb8a00;
+	font: bold 1.2em Arial,Helvetica,Verdana;
+	text-decoration:none;
+}
+.nav-root ul li a:hover{
+	color: #ffffff;
+	background: #66A552;
+	text-decoration:none;
+}
+
+.nav-root .nav-root-current a{
+	background: #FF9F33;
+	color: #ffffff;
+}

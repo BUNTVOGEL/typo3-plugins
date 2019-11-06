@@ -1,0 +1,20 @@
+#b1b1out, #b2b1out, #b3b1out, #b4b1out, #b5b1out{
+ width: 25%
+}
+#b1b1in, #b2b1in, #b3b1in, #b4b1in, #b5b1in{
+  padding: 10px 10px 10px 20px;
+}
+#b1b2out, #b2b2out, #b3b2out, #b4b2out, #b5b2out{
+ width: 25%
+}
+#b1b2in, #b2b2in, #b3b2in, #b4b2in, #b5b2in{
+ padding: 10px 20px 10px 10px;
+}
+#b1b3out, #b2b3out, #b3b3out, #b4b3out, #b5b3out{
+  margin: 0 25%;
+}
+#b1b3in, #b2b3in, #b3b3in, #b4b3in, #b5b3in{
+  padding:10px;
+}
+
+

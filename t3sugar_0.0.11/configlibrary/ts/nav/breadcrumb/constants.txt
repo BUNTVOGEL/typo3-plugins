@@ -1,0 +1,48 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navBreadcrumb{
+  # cat=t3sugar.enable; type=boolean; label=NavBreadcrumb : EXT:t3sugar/configuration/TS/nav/breadcrumb
+	enablenavBreadcrumb = 1
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHere : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHere = <span class="info">Sie sind hier:</span>
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHereEn : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHereEn = <span class="info">You are here:</span>
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHereFr : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHereFr = <span class="info">Vous êtes ici:</span>
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHere : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHereDe = <span class="info">Sie sind hier:</span>
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHere : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHereEs = <span class="info">You are here:</span>
+  # cat=t3sugar.navRoot; type=string; label=wrapCssClass : EXT:t3sugar/configuration/TS/nav/root
+   wrapCssClass = id="menu-breadcrumb" class="menu-line"
+  # cat=t3sugar.navRoot; type=string; label=cssClassCurrent : EXT:t3sugar/configuration/TS/nav/root
+   cssClassCurrent = class="current"
+  # cat=t3sugar.navBreadcrumb; type=string; label=target : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  target = _self
+  # cat=t3sugar.navBreadcrumb; type=string; label=gt : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  gt =
+  # cat=t3sugar.navBreadcrumb; type=string; label=range : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  range = 1|-1
+  # cat=t3sugar.navBreadcrumb; type=boolean; label=setNavBreadcrumbRecords : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  setnavBreadcrumbRecords = 1
+}

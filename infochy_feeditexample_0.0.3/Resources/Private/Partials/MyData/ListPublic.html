@@ -1,0 +1,10 @@
+<div class="col-md-6">
+	<f:link.action action="showPublic" arguments="{myData : myData}"> {myData.title}</f:link.action>
+</div>
+<div class="col-md-6">
+	<f:link.action action="showPublic" arguments="{myData : myData}">
+		<f:if condition="{myData.image}">
+			<f:image image="{myData.image}" alt="" width="200"/>
+		</f:if>
+	</f:link.action>
+</div>

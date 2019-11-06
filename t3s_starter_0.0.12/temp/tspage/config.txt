@@ -1,0 +1,160 @@
+##########################################################################################
+#### config: RTE
+#### path: /typo3conf/ext/t3s_starter/configlibrary/tspage/RTE/config.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+
+RTE.default {
+  contentCSS = EXT:t3sugar/temp/css/rte.css
+  showTagFreeClasses = 1
+  showButtons = *
+  hideButtons =
+  keepButtonGroupTogether = 1
+  classesCharacter =
+  classesParagraph =
+  allowedClasses =
+  proc {
+    allowedClasses < RTE.default.allowedClasses
+  }
+  FE {
+    proc  {
+      allowedClasses < RTE.default.allowedClasses
+    }
+  }
+}
+
+
+RTE.classesAnchor {
+  externalLink {
+    class = external-link
+    type = url
+    image=EXT:t3sugar/resources/plugin/rtehtmlarea/images/external_link.gif
+    titleText =
+  }
+  externalLinkInNewWindow {
+    class = external-link-new-window
+    type = url
+    image=EXT:t3sugar/resources/plugin/rtehtmlarea/images/external_link_new_window.gif
+    titleText =
+  }
+  internalLink {
+    class = internal-link
+    type = page
+    image=EXT:t3sugar/resources/plugin/rtehtmlarea/images/internal_link.gif
+    titleText =
+  }
+  internalLinkInNewWindow {
+    class = internal-link-new-window
+    type = page
+    image=EXT:t3sugar/resources/plugin/rtehtmlarea/images/internal_link_new_window.gif
+    titleText =
+  }
+  download {
+    class = download
+    type = file
+    image=EXT:t3sugar/resources/plugin/rtehtmlarea/images/download.gif
+    titleText =
+  }
+  mail {
+    class = mail
+    type = mail
+    image=EXT:t3sugar/resources/plugin/rtehtmlarea/images/mail.gif
+    titleText =
+  }
+}
+##########################################################################################
+#### config: TCEMAIN
+#### path: /typo3conf/ext/t3s_starter/configlibrary/tspage/TCEMAIN/config.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+##########################################################################################
+#### config: TSFE
+#### path: /typo3conf/ext/t3s_starter/configlibrary/tspage/TSFE/config.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+##########################################################################################
+#### config: TCEFORM
+#### path: /typo3conf/ext/t3s_starter/configlibrary/tspage/TCEFORM/config.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################

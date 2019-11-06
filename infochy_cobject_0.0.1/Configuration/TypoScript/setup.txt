@@ -1,0 +1,39 @@
+
+plugin.tx_infochycobject_plugin {
+	view {
+		templateRootPaths.0 = {$plugin.tx_infochycobject_plugin.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_infochycobject_plugin.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_infochycobject_plugin.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_infochycobject_plugin.persistence.storagePid}
+	}
+}
+
+plugin.tx_infochycobject_cobject {
+	view {
+		templateRootPaths.0 = {$plugin.tx_infochycobject_cobject.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_infochycobject_cobject.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_infochycobject_cobject.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_infochycobject_cobject.persistence.storagePid}
+	}
+}
+
+
+temp.cobjectpluginExtension = USER
+temp.cobjectpluginExtension {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = InfochyCobject
+    pluginName = Cobject
+    vendorName = Infochy
+    controller = Data
+    action = cobject
+    view < plugin.tx_infochycobject_cobject.view
+    persistence < plugin.tx_infochycobject_cobject.persistence
+    settings < plugin.tx_infochycobject_cobject.settings
+}
+
+lib.cobjectplugin = COA
+lib.cobjectplugin < temp.cobjectpluginExtension

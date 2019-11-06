@@ -1,0 +1,10 @@
+config.tx_extbase.persistence.classes {
+	Infochy\InfochyCat\Domain\Model\Category {
+		mapping {
+			tableName = sys_category
+			columns {
+				parent.mapOnProperty = parent
+			}
+		}
+	}
+}

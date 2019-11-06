@@ -1,0 +1,6 @@
+.error,
+.notice,
+.success    { padding: 0.8em; margin-bottom: 1em;}
+.error      { color: red; }
+.notice     { color: green; }
+.success    { bcolor: yellow; }

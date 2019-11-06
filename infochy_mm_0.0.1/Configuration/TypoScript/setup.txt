@@ -1,0 +1,45 @@
+
+plugin.tx_infochymm_plugin {
+	view {
+		templateRootPaths.0 = {$plugin.tx_infochymm_plugin.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_infochymm_plugin.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_infochymm_plugin.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_infochymm_plugin.persistence.storagePid}
+	}
+}
+
+plugin.tx_infochymm._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-infochy-mm table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-infochy-mm table th {
+		font-weight:bold;
+	}
+
+	.tx-infochy-mm table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)

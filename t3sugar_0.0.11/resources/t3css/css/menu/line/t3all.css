@@ -1,0 +1,43 @@
+.menu-line {
+  /* float ie */
+  width: 100%;
+  overflow: hidden;
+  /* float all browsers */
+  float: left;
+  display: inline;
+  line-height: 0em;
+}
+.menu-line .info,
+.menu-line ul,
+.menu-line ul li{
+  /* bug ie */
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.menu-line ul li {
+  list-style-type: none;
+}
+.menu-line ul li span.noanker,
+.menu-line ul li a {
+  color: #000;
+  display: block;
+  margin: 0;
+  width: auto;
+}
+.menu-line ul li a,
+.menu-line ul li span.noanker,
+.menu-line ul li.current a,
+.menu-line ul li a:focus,
+.menu-line ul li a:hover,
+.menu-line ul li a:active  {
+  text-decoration: none;
+}
+.menu-line ul li span.noanker,
+.menu-line ul li.current a,
+.menu-line ul li a {
+  background: transparent;
+}
+.menu-line-right{
+}

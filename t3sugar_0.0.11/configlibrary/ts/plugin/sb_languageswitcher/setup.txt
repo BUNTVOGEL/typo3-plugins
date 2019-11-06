@@ -1,0 +1,122 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+includeLibs.tx_div = EXT:div/class.tx_div.php
+includeLibs.tx_sblanguageswitcher_controllers_languageSwitch = EXT:sb_languageswitcher/controllers/class.tx_sblanguageswitcher_controllers_languageSwitch.php
+plugin.tx_sblanguageswitcher_pi1.configuration{
+  validate{
+	  notInBuildArray = L,id
+	  parseStringLimit = 100
+  }
+  languages{
+      showOnlyPassivLink =
+      pidExcludeList =
+      contentFallBackUid =
+      disableAktivLink = 1
+      noContentToValue = <li class="current"><span class="noanker"> |</span></li>
+      wrapAll = <div id="menu-language" class="menu-line"><span class="info">Sprache:</span><ul>|</ul></div>
+      values{
+        0{
+           label = {$config.language00}
+           wrap = <li class="current"><span class="noanker"> |</span></li>
+        }
+        1{
+	        label = {$config.language01}
+	        wrap = <li> |</li>
+        }
+        2{
+           label =  {$config.language02}
+           wrap = <li> |</li>
+        }
+        3{
+           label = {$config.language03}
+           wrap = <li> |</li>
+        }
+        4{
+           label = {$config.language04}
+           wrap = <li> |</li>
+        }
+      }
+  }
+}
+
+[globalVar = GP:L = 1]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      wrapAll = <div id="menu-language" class="menu-line"><span class="info">Language:</span><ul>|</ul></div>
+      values{
+        0{
+           wrap = <li> |</li>
+        }
+        1{
+	         wrap = <li class="current"><span class="noanker"> |</span></li>
+        }
+      }
+  }
+[global]
+[globalVar = GP:L = 2]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      wrapAll = <div id="menu-language" class="menu-line"><span class="info">Langue:</span><ul>|</ul></div>
+      values{
+        0{
+           wrap = <li> |</li>
+        }
+        2{
+           wrap = <li class="current"><span class="noanker"> |</span></li>
+        }
+      }
+  }
+[global]
+[globalVar = GP:L = 3]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      wrapAll = <div id="menu-language" class="menu-line"><span class="info">Sprache:</span><ul>|</ul></div>
+      values{
+        0{
+           wrap = <li> |</li>
+        }
+        3{
+           wrap = <li class="current"><span class="noanker"> |</span></li>
+        }
+      }
+  }
+[global]
+[globalVar = GP:L = 4]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      wrapAll = <div id="menu-language" class="menu-line"><span class="info">Langue:</span><ul>|</ul></div>
+      values{
+        0{
+           wrap = <li> |</li>
+        }
+        4{
+           wrap = <li class="current"><span class="noanker"> |</span></li>
+        }
+      }
+  }
+[global]
+plugin.tx_sblanguageswitcher.switchControllers < plugin.tx_sblanguageswitcher_pi1.configuration
+plugin.tx_sblanguageswitcher.switchControllers = USER_INT
+plugin.tx_sblanguageswitcher.switchControllers{
+		userFunc = tx_sblanguageswitcher_controllers_languageSwitch->main
+		action = languageSwitch
+		templatePath = EXT:sb_languageswitcher/templates
+		template = languageSwitch
+		setupPath = plugin.tx_sblanguageswitcher_pi1.configuration.
+}

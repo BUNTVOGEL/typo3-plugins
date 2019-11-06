@@ -1,0 +1,19 @@
+{namespace h=Infochy\InfochyHelper\ViewHelpers}
+
+<label for="title">
+	<f:translate key="tx_infochyfeeditexample_domain_model_mydata.title"/>
+</label><br/>
+<f:form.textfield property="title"/><br/>
+
+
+<label for="image">
+	<f:translate key="tx_infochyfeeditexample_domain_model_mydata.image"/>
+</label><br/>
+
+<h:form.upload property="image">
+	<f:if condition="{resource}">
+		<f:image image="{resource}" alt="" width="50"/>
+	</f:if>
+</h:form.upload>
+
+<br/><br/>

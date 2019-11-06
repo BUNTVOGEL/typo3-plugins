@@ -1,0 +1,478 @@
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/charset/t3all.css
+##########################################################
+*/
+@charset "UTF-8";
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/reset/t3all.css
+##########################################################
+*/
+/*
+Copyright (c) 2007, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.4.1
+NO FROM BSD to GNU!
+*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+/* to preserve line-height and selector appearance */
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*because legend doesn't inherit in IE */
+legend{color:#000;}
+
+
+a img { border: none; }
+/* paddings and margins */
+* { margin:0; padding: 0 }
+
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/html/t3all.css
+##########################################################
+*/
+/* get vertical scrollbars Firefox,Netscape,Safari
+  @see http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better
+  Horizontal Scrollbar bug
+  @see http://www.torn.be/kazza/tutz/xhtml/4/xhtml_hor_scrlbar_results_en.html
+*/
+html {
+  height: 100%;
+  margin-bottom: 1px;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/body/t3all.css
+##########################################################
+*/
+body {
+ /* set the layout center for ie */
+ text-align: center;
+ padding: 10px ;
+}
+.bodyout{
+ /* set the layout center for standart browser */
+ margin: 0 auto;
+ /* set the layout center for ie -> reset text align */
+ text-align: left;
+}
+.bodyin{
+ background: #fff;
+ border: 10px #fff solid;
+}
+.bodybox{
+  background: #fff;
+  clear:both;
+  width:auto;
+}
+
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/padding/t3all.css
+##########################################################
+*/
+.padding-topbottom{
+	padding: 10px 0;
+}
+.padding-leftright{
+	padding: 0 10px;
+}
+.padding-yes{
+	padding: 10px;
+}
+.padding-no{
+	padding: 0;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/table/t3all.css
+##########################################################
+*/
+table {
+	 border-collapse:collapse;
+	 empty-cells:show;
+	 font-size:0.8em;
+	 width:100%;
+	 background: #e8e8e8;
+}
+table caption {
+	text-align:left;
+	font-weight:bold;
+	color:#000;
+	margin:0.2em;
+}
+table th, table thead td{
+	color:white;
+	padding:3px 5px;
+	height:2em;
+	font-weight:bold;
+	background:#ccc;
+}
+table td {
+	height:2em;
+	padding:3px 5px;
+	text-align:left;
+	font-weight:normal;
+}
+table td, table th {
+	border: 2px solid #fff;
+}
+table tr.odd {background: #e8e8e8;}
+table tr.even {background: #d9d9d9;}
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/form/t3all.css
+##########################################################
+*/
+/* only for the float forms class form! */
+form fieldset label {
+	font-weight: bold;
+	margin-top: 5px;
+}
+form fieldset p label {
+	float: left;
+	/* 20% of the complete width of the fieldset */
+	width: 20%;
+	text-align: left;
+}
+
+form fieldset p, form fieldset br {
+	/* clear only the leftside */
+	clear: left;
+	/* please no padding - see <p> padding */
+}
+form fieldset .form-block{
+   margin-left: 20%;
+}
+.form-nofloat {
+	/* inline checkboxes with label right */
+	float: none !important;
+	width: auto !important;
+}
+
+input, textarea,  select{
+   border: 1px solid #ccc;
+}
+form fieldset p input, form fieldset p textarea, form fieldset p  select{
+   margin-top: 5px;
+}
+input:focus , textarea:focus , select:focus {
+  background: #ffc;
+}
+
+option {
+	/* fix small select-option */
+	padding-left: 0.3em;
+	border:none;
+    background:none;
+    width:auto;
+}
+form fieldset textarea{
+    width: 90%;
+}
+form fieldset p textarea{
+    width: 70%;
+}
+
+fieldset    { padding:1em; border: 1px solid #ccc; margin-bottom: 10px; }
+legend      { font-weight: bold; font-size:1.2em; }
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/messages/t3all.css
+##########################################################
+*/
+.error,
+.notice,
+.success    { padding: 0.8em; margin-bottom: 1em;}
+.error      { color: red; }
+.notice     { color: green; }
+.success    { bcolor: yellow; }
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/float/box/t3all.css
+##########################################################
+*/
+/*  z-index
+  @see http://aplus.co.yu/lab/z-pos/
+  @see http://www.css-zibaldone.com/test/css21/absolute/centered-boxes-2/index.html
+*/
+ .floatbox-before{
+  width: 25%;
+  z-index: 3;
+  float: left;
+}
+ .floatbox-before .floatbox{
+ z-index: 4;
+}
+ .floatbox-after{
+  width: 25%;
+  z-index: 5;
+  float: right;
+}
+ .floatbox-after .floatbox{
+	z-index: 6;
+}
+ .floatbox-middle{
+  margin: 0 25%;
+  z-index: 1;
+  width:auto;
+}
+ .floatbox-middle .floatbox{
+	z-index: 2;
+}
+.floatbox-clear{
+	display: none;
+}
+/* nested boxes
+  @see http://www.parterremedia.de/csswork/css-box-modell/boxmodell-01.html
+  @see http://www.washington.edu/webinfo/snippets/css/boxmodel.html
+*/
+.floatbox{
+  position: relative;
+}
+/* clear float @see http://www.positioniseverything.net/explorer/peekaboo.html */
+.floatbox:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html .floatbox { height: 1%; }
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/clear/t3all.css
+##########################################################
+*/
+.clear { display: inline-block; }
+/* How To Clear Floats Without Structural Markup
+  @see http://www.positioniseverything.net/easyclearing.html
+*/
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  width: 0;
+}
+/*  Hide from IE-mac + clear in float boxes for Safari browser */
+.clear { display: block }
+* html .clear { height: 1%; }
+/* clear for float boxes */
+.clear-ie { display: none }
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/typography/t3all.css
+##########################################################
+*/
+/* Percentage of 16px (0.75 * 16px = 12px)*/
+body { font-size: 75%; }
+/* Global Font-Family */
+body {
+  font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+
+
+
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/headings/t3all.css
+##########################################################
+*/
+ h1,h2,h3,h4,h5,h6 { font-weight:bold; margin: 0 0 0.25em 0; }
+ h1 { font-size: 220%; }
+ h2 { font-size: 190%; }
+ h3 { font-size: 150%; }
+ h4 { font-size: 130%; }
+ h5 { font-size: 100%; }
+ h6 { font-size: 90%; }
+
+h1,h2,h3 {
+	margin:1em 0;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:bold;
+}
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/color/t3all.css
+##########################################################
+*/
+/* Font-Color */
+body{
+  color: #444;
+}
+/*Body-Color */
+body {
+  background: #ccc;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: #111;
+}
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/list/t3all.css
+##########################################################
+*/
+blockquote,ul,ol,dl {
+	margin:1em;
+}
+ol,ul,dl {
+	margin-left:2em;
+}
+ol li {
+	list-style: decimal outside;
+}
+ul li {
+	list-style: disc outside;
+}
+dl dd {
+	margin-left:1em;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/redges/t3all.css
+##########################################################
+*/
+/* @see http://www.html.it/articoli/nifty/index.html, http://www.spiffycorners.com/ */
+* html .redges-in {height:1%}
+.redges-in, .redges-1, .redges-2, .redges-3, .redges-4 {overflow:hidden}
+.redges-in, .redges-out, .redges-1, .redges-2, .redges-3, .redges-4 {display:block;}
+.redges-out {background:transparent; font-weight:normal; }
+/* border left and right and the padding*/
+.redges-in {border-left:1px solid #ccc; border-right:1px solid #ccc; padding:0.5em 1em;}
+/*building the round edges no-size*/
+.redges-1, .redges-2, .redges-3, .redges-4 {font-size:1px;}
+/*building the round edges*/
+.redges-1, .redges-2, .redges-3 {height:1px;}
+/*building the round edges border-color*/
+.redges-2, .redges-3, .redges-4 { border-left:1px solid #ccc; border-right:1px solid #ccc;}
+/*background for topborder*/
+.redges-1 {margin:0 5px; background:#ccc;}
+.redges-2 {margin:0 3px; border-width:0 2px;}
+.redges-3 {margin:0 2px;}
+.redges-4 {margin:0 1px; height:2px;}
+
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/redges/bgc/t3all.css
+##########################################################
+*/
+.redges-bgc-gray {
+	background:#e8e8e8;
+}
+.redges-bgc-white{
+	background:#fff;
+}
+.redges-bgc-red{
+	background:#efa7a7;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/menu/line/t3all.css
+##########################################################
+*/
+.menu-line {
+  /* float ie */
+  width: 100%;
+  overflow: hidden;
+  /* float all browsers */
+  float: left;
+  display: inline;
+  line-height: 0em;
+}
+.menu-line .info,
+.menu-line ul,
+.menu-line ul li{
+  /* bug ie */
+  display: inline;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.menu-line ul li {
+  list-style-type: none;
+}
+.menu-line ul li span.noanker,
+.menu-line ul li a {
+  color: #000;
+  display: block;
+  margin: 0;
+  width: auto;
+}
+.menu-line ul li a,
+.menu-line ul li span.noanker,
+.menu-line ul li.current a,
+.menu-line ul li a:focus,
+.menu-line ul li a:hover,
+.menu-line ul li a:active  {
+  text-decoration: none;
+}
+.menu-line ul li span.noanker,
+.menu-line ul li.current a,
+.menu-line ul li a {
+  background: transparent;
+}
+.menu-line-right{
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/menu/list/t3all.css
+##########################################################
+*/
+.menu-list {
+    width: 100%;
+    overflow: hidden;
+    list-style-type: none;
+}
+.menu-list ul {
+	 list-style-type: none; margin:0; padding: 0;
+}
+.menu-list li {
+	float:left; width: 100%; margin:0; padding: 0;
+}
+.menu-list .current{
+}
+.menu-list li a {
+  display: block;
+  text-decoration:none;
+}
+.menu-list li a:hover {
+  text-decoration:none;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/print/t3all.css
+##########################################################
+*/
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/a/t3all.css
+##########################################################
+*/
+a:focus,a:hover  { color: #000; }
+a  { text-decoration: underline; }

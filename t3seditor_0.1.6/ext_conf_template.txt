@@ -1,0 +1,2 @@
+  # cat=basic; type=string; label=Name of the t3sExtension
+ext =

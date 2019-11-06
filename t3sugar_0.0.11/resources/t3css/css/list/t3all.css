@@ -1,0 +1,15 @@
+blockquote,ul,ol,dl {
+	margin:1em;
+}
+ol,ul,dl {
+	margin-left:2em;
+}
+ol li {
+	list-style: decimal outside;
+}
+ul li {
+	list-style: disc outside;
+}
+dl dd {
+	margin-left:1em;
+}

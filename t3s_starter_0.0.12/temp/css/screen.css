@@ -1,0 +1,486 @@
+
+/*
+##########################################################
+#### config: fixes
+#### path: typo3conf/ext/t3s_starter/resources/css/fixes/screen.css
+##########################################################
+*/
+
+/*
+##########################################################
+#### config: content
+#### path: typo3conf/ext/t3s_starter/resources/css/content/screen.css
+##########################################################
+*/
+.headerlogo{
+ height: 130px;
+ position:relative;
+ background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin-right: 30px;
+	 -moz-opacity:0.8;
+	filter:Alpha(opacity=80, finishopacity=0, style=0);
+}
+
+
+a, a em.file {
+text-decoration:none;
+}
+img.float_left {
+border:0pt none;
+float:left;
+margin-bottom:0.15em;
+margin-right:1em;
+}
+img.float_right {
+border:0pt none;
+float:right;
+margin-bottom:0.15em;
+margin-left:1em;
+}
+img.center {
+background:#FFFFFF none repeat scroll 0%;
+border:1px solid #DDDDDD;
+padding:4px;
+text-align:center;
+}
+
+
+/*
+##########################################################
+#### config: form
+#### path: typo3conf/ext/t3s_starter/resources/css/form/screen.css
+##########################################################
+*/
+/* only for the float forms class form! */
+.form label {
+	float: left;
+	/* 20% of the complete width of the fieldset */
+	width: 20%;
+	text-align: left;
+	font-weight: bold;
+}
+.form p {
+	/* clear only the leftside */
+	clear: left;
+	/* please no padding - see <p> padding */
+}
+.form-block{
+   margin-left: 20%;
+}
+.form-nofloat {
+	/* inline checkboxes with label right */
+	float: none !important;
+	width: auto !important;
+}
+/* <p> padding here */
+.form input, .form textarea, .form select, .form label{
+   margin-top:3px !important;
+   margin-top:0px; /*position-fix IE6*/
+   margin-bottom:6px !important;
+   margin-bottom:0px; /*position-fix IE6*/
+}
+.form input, .form textarea, .form select{
+   margin-left: 10px;
+   border: 1px solid #ccc;
+}
+.form input:focus , .form textarea:focus , .form select:focus {
+  background: #ffc;
+}
+/* for text after checkboxes and radio */
+.form span, .form-nofloat{
+   top: -4px;
+   position: relative;
+}
+option {
+	/* fix small select-option */
+	padding-left: 0.3em;
+	border:none;
+    background:none;
+    width:auto;
+}
+.form textarea{
+    width: 70%;
+}
+
+
+fieldset    { padding:1em; border: 1px solid #ccc; margin-bottom: 10px; }
+legend      { font-weight: bold; font-size:1.2em; }
+
+/*
+##########################################################
+#### config: sub
+#### path: typo3conf/ext/t3s_starter/resources/css/nav/sub/screen.css
+##########################################################
+*/
+
+.nav-sub{
+  clear: both;
+  display: inline;
+}
+.nav-sub ul {
+  margin:0pt;
+  padding:0pt;
+}
+.nav-sub .nav-sub-cur{
+	padding: 3px 3px 3px 10px;
+  background-color: #66A552;
+  border-left: 3px solid  #DDDDDD;
+  color: #ffffff;
+  border-bottom: 1px solid #DDDDDD;
+}
+.nav-sub li a {
+  display: block;
+	padding: 3px 3px 3px 10px;
+  	border-left: 3px solid  #DDDDDD;
+	text-decoration:none;
+border-bottom: 1px solid #DDDDDD;
+}
+.nav-sub li a:hover {
+  background-color: #FF9F33;
+  color: #ffffff;
+	text-decoration:none;
+}
+
+/*
+##########################################################
+#### config: special
+#### path: typo3conf/ext/t3s_starter/resources/css/nav/special/screen.css
+##########################################################
+*/
+
+/*
+##########################################################
+#### config: root
+#### path: typo3conf/ext/t3s_starter/resources/css/nav/root/screen.css
+##########################################################
+*/
+
+.nav-root{
+ position:absolute;
+ bottom: 8px;
+ left: 38px;
+ z-index:99;
+}
+.nav-root ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+.nav-root ul li{
+	float:left;
+	padding: 5px 5px 5px 5px;
+	-moz-opacity:0.85;
+	filter:Alpha(opacity=85, finishopacity=0, style=0);
+}
+.nav-root ul li a{
+  display: block;
+	padding: 5px 9px 5px 9px;
+	background: #ffffff;
+	color: #eb8a00;
+	font: bold 1.2em Arial,Helvetica,Verdana;
+	text-decoration:none;
+}
+.nav-root ul li a:hover{
+	color: #ffffff;
+	background: #66A552;
+	text-decoration:none;
+}
+
+.nav-root .nav-root-current a{
+	background: #FF9F33;
+	color: #ffffff;
+}
+
+/*
+##########################################################
+#### config: sidemap
+#### path: typo3conf/ext/t3s_starter/resources/css/nav/sidemap/screen.css
+##########################################################
+*/
+
+
+.csc-sitemap{
+  padding: 5px 100px 10px 100px;
+}
+.csc-sitemap ul {
+  margin:0pt;
+  padding:0pt;
+  text-align: left;
+}
+.csc-sitemap li a {
+  display: block;
+	padding: 3px 3px 3px 10px;
+  border-left: 10px solid  #DDDDDD;
+	text-decoration:none;
+  border-bottom: 1px solid #DDDDDD;
+}
+.csc-sitemap li li a {
+  border-left: 20px solid  #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.csc-sitemap li li li a {
+  border-left: 30px solid  #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+.csc-sitemap li a:hover {
+  background-color: #FF9F33;
+  color: #ffffff;
+	text-decoration:none;
+}
+
+/*
+##########################################################
+#### config: language
+#### path: typo3conf/ext/t3s_starter/resources/css/nav/language/screen.css
+##########################################################
+*/
+
+.nav-language ul{
+  display:inline;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  font: normal 1.0em Arial,Helvetica,Verdana;
+}
+.nav-language li a{
+   font: bold 1.0em Arial,Helvetica,Verdana;
+}
+.nav-language ul li {
+ display:inline;
+}
+.nav-language span.info{
+  padding-right: 3px;
+}
+
+/*
+##########################################################
+#### config: breadcrumb
+#### path: typo3conf/ext/t3s_starter/resources/css/nav/breadcrumb/screen.css
+##########################################################
+*/
+
+.nav-breadcrumb ul{
+  display:inline;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  font: normal 1.0em Arial,Helvetica,Verdana;
+}
+.nav-breadcrumb ul li {
+ display:inline;
+}
+.nav-breadcrumb span.info{
+  padding-right: 3px;
+}
+
+/*
+##########################################################
+#### config: tags
+#### path: typo3conf/ext/t3s_starter/resources/css/tags/screen.css
+##########################################################
+*/
+body {
+  color:#444444;
+  font-family:'Trebuchet MS',Verdana,Helvetica,Arial,sans-serif;
+  font-size:81.25%;
+  background:#9999AB none repeat scroll 0%;
+  padding:10px;
+  min-height:101%;
+  position:relative;
+  text-align:left;
+}
+* {
+  margin:0pt;
+  padding:0pt;
+}
+
+a{
+  color:#000000;
+  text-decoration:none;
+}
+a:hover{
+  color:#000000;
+  text-decoration:underline;
+}
+ul{
+  list-style-type:none;
+  margin:0pt;
+  padding:0pt;
+}
+img{
+border: 0px solid white;
+}
+
+
+
+p, ul, dd, dt {
+line-height:1.5em;
+}
+ul, ol, dl {
+margin:0pt 0pt 1em 1em;
+}
+
+
+
+h1,h2,h3,h4 {font-family:Verdana, Arial, Sans-Serif; font-weight:normal;}
+h1,h2,h3,h4 {font-family:Verdana, Arial, Sans-Serif; display:block; font-weight:bold;}
+
+h1 {font-size:1.2em; background:transparent; margin: 0 0 0.5em 0; border-bottom:1px #ccc solid; }
+h2 {font-size:1.0em; background:transparent; margin: 0 0 0.5em 0; padding:0.3em; }
+h3 {font-size:1.0em; background:transparent; margin: 0 0 0.3em 0; }
+h4 {font-size:1.0em; background:transparent; margin: 0 0 0.3em 0; border-bottom:1px #ccc solid; }
+
+p, ul, dd, dt {
+line-height:1.5em;
+}
+p {
+line-height:1.5em;
+margin:0pt 0pt 1em;
+}
+strong, b {
+font-weight:bold;
+}
+em, i {
+font-style:italic;
+}
+pre, code {
+font-family:"Courier New",Courier,monospace;
+}
+address {
+font-style:normal;
+line-height:1.5em;
+margin:0pt 0pt 1em;
+}
+hr {
+background:transparent none repeat scroll 0%;
+border-color:-moz-use-text-color -moz-use-text-color #EEEEEE;
+border-style:none none solid;
+border-width:0pt 0pt 1px;
+color:#FFFFFF;
+margin:0pt 0pt 0.5em;
+padding:0pt 0pt 0.5em;
+}
+acronym, abbr {
+border-bottom:1px dashed #CC0000;
+cursor:help;
+}
+
+
+
+
+
+/*
+##########################################################
+#### config: boxes
+#### path: typo3conf/ext/t3s_starter/resources/css/boxes/screen.css
+##########################################################
+*/
+.headerlogo{background-image: url(typo3conf/ext/t3s_starter/resources/images/typo3.png);}
+#box-margin{
+  margin:auto;
+  max-width:100em;
+  min-width:200px;
+  padding:0pt;
+}
+#box-padding{
+ background:#FFFFFF none repeat scroll 0%;
+ border: 1px solid #DDDDDD;
+}
+* html #box-padding{
+  height: 1%;
+}
+#box3l2, #box2l, #box3l3 {
+  float: left;
+  width: 20%;
+  margin:0;
+  padding: 0 10px 0 5px;
+}
+#box3r3 {
+  float: right;
+  width: 20%;
+  margin:0;
+  padding: 0 5px 0 10px;
+}
+#box3m3 {
+	width: auto;
+	margin: 0 20% 0 20%;
+	padding: 0 20px;
+}
+#box3m2, #box2m {
+	width: auto;
+    margin: 0 0 0 20%;
+    padding: 0 20px;
+}
+#box2{
+  border-bottom: 1px solid #DDDDDD;
+}
+#box3, #box2{
+  background:#FFFFFF none repeat scroll 0%;
+  padding: 5px 0px 5px 0px;
+  clear:both;
+  width:auto;
+  margin:0pt 1em;
+}
+#box1{
+ height:150px;
+ position:relative;
+ background-color:#ffffff;
+ background-attachment: scroll;
+ background-repeat: repeat-x;
+ background-position: center left;
+ background-image: url(typo3conf/ext/t3s_starter/resources/images/box1background.jpg);
+}
+#box4{
+  clear:both;
+  background:#FFFFFF none repeat scroll 0%;
+  border-top: 1px solid #DDDDDD;
+  line-height:2em;
+  margin:0pt 1em;
+  padding:1em 0pt;
+}
+
+/*
+##########################################################
+#### config: table
+#### path: typo3conf/ext/t3s_starter/resources/css/table/screen.css
+##########################################################
+*/
+table {
+	 border-collapse:collapse;
+	 empty-cells:show;
+	 font-size:0.8em;
+	 width:100%;
+	 background: #d9d959;
+}
+table caption {
+	text-align:left;
+	font-weight:bold;
+	color:#000;
+	margin:0.2em;
+}
+table th, table thead td{
+	color:white;
+	padding:3px 5px;
+	height:2em;
+	background:#575783;
+}
+table td {
+	height:2em;
+	padding:3px 5px;
+	text-align:left;
+	font-weight:normal;
+}
+table td, table th {
+	border:solid 2px #fff;
+}
+table tr.odd {background: #baba4d;}
+table tr.even {background: #d9d959;}
+
+/*
+##########################################################
+#### config: css
+#### path: typo3conf/ext/t3s_starter/resources/plugin/rtehtmlarea/css/screen.css
+##########################################################
+*/

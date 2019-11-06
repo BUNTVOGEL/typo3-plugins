@@ -1,0 +1,9 @@
+// 1. Copy to your Partial-Template
+{namespace h=Infochy\InfochyHelper\ViewHelpers}
+
+// 2. Set Image property Name of Model (here: image = function getImage())
+<h:form.upload property="image">
+	<f:if condition="{resource}">
+		<f:image image="{resource}" alt="" width="50"/>
+	</f:if>
+</h:form.upload>

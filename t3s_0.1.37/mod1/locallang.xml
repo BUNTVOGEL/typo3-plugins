@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>T3S Install-Tool</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">T3S Install-Tool</label>
+			<label index="t3sCreateExtensionLabel">T3S Extension Name: </label>
+			<label index="t3sCreateExtension">Create your own T3S-Distribution!</label>
+			<label index="t3sSql">T3S Install-Tool</label>
+			<label index="t3sInstallPackageSelected">[C. Or...] Select a T3S-Distribution from your Server (Select A,B or C!)</label>
+			<label index="t3sInstallPackageSelectedSupport">[A. Or...] Select a T3S-Distribution (Select A,B or C!)</label>
+			<label index="ApacheModRewrite">The Htaccess File is not writeable, 'cos you haven't a Apache2Handler ModRewrite Configuration!</label>
+			<label index="ENABLE_T3S_INSTALL_TOOL">The Install Tool is locked! Fix: Remove file typo3conf/DISABLE_T3S_INSTALL_TOOL. This file may simply be empty.</label>
+			<label index="IMGrafixInstalled">ImageMagick/ImageGrafix is NOT installed? Please set the Path in the Typo3-Install-Tool!</label>
+			<label index="Typo3ConfWriteable">The folder "typo3/typo3conf/" is NOT writeable!</label>
+			<label index="Typo3ConfExtWriteable">The folder "typo3/typo3conf/ext/" is NOT writeable!</label>
+			<label index="ExtensionXMLList">NO connection to the Typo3-Extension-Repository!</label>
+			<label index="TempWriteable">The folder "typo3/typo3temp/" is NOT writeable!</label>
+			<label index="t3sInstallPackage">[B. Or...] Fetch a T3S-Distribution from the Extension Repository (Select A,B or C!)</label>
+			<label index="t3sInstallPackageLabel">Install the selected T3S-Distribution</label>
+			<label index="t3sInstallPackageSubmit">Start Installation</label>
+			<label index="t3sInstallYes">Are you really like to install the T3S-Distribution? </label>
+			<label index="FileadminWriteable">The folder "typo3/fileadmin/" is NOT writeable!</label>
+			<label index="t3sSqlLabel">SQL anlegen: </label>
+			<label index="t3sSql">The T3S Install-Distribution configurates the database! This executes SQL!</label>
+			<label index="t3sHtaccessLabel">: </label>
+			<label index="isOnlyT3S">You have NO empty Typo3-Dummy-Package! You have more than 1 Extension in Typo3conf! The Install-Tool can overwrite one of these Extensions!</label>
+			<label index="t3sHtaccess">Write the ".htaccess" file for the RealUrl-Extension in the "/typo3" folder.</label>
+			<label index="t3sWriteFileadminLabel">Import files and folders from the Install-Distribution and write it in to the "typo3/fileadmin/". </label>
+			<label index="t3sWriteFileadmin">Import files and folders from the Install-Distribution and write it into the "typo3/fileadmin/".</label>
+			<label index="t3sTerimportLabel">Download this from the Extension Repository </label>
+			<label index="t3sTerimport">Download this Extensions from the Typo3-Extension-Repository. </label>
+			<label index="t3ssubmitLabel">t3sSubmitInstall</label>
+			<label index="t3ssubmit">In the next Step you can see all the tasks for the installation...</label>
+			<label index="t3sSubmitInstallLabel">t3sSubmitInstall</label>
+			<label index="t3sSubmitInstall">Install the selected T3S-Distribution</label>
+			<label index="t3ssubmitvalue">Run the T3S-Installation</label>
+			<label index="getXMLListButtonLabelvalue">Retrieve/Update the Extension-List</label>
+			<label index="getXMLListButtonLabel">Connection to the Typo3-Extension-Repository!</label>
+		</languageKey>
+	</data>
+</T3locallang>

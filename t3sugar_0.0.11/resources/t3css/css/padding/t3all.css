@@ -1,0 +1,12 @@
+.padding-topbottom{
+	padding: 10px 0;
+}
+.padding-leftright{
+	padding: 0 10px;
+}
+.padding-yes{
+	padding: 10px;
+}
+.padding-no{
+	padding: 0;
+}

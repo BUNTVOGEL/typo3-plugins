@@ -1,0 +1,16 @@
+#printheader, #printfooter{
+	 display: block;
+	 text-align: left;
+	 padding: 3px 0;
+	 margin: 3px 0;
+	 border-bottom: 2px solid #ccc;
+	 border-top: 2px solid #ccc;
+	 font-weight: bold;
+	 background: #fff;
+}
+.print-yes{
+	display: block;
+}
+.print-no{
+	display: none;
+}

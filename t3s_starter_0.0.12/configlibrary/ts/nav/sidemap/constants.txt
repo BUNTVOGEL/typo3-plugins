@@ -1,0 +1,44 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navSidemap {
+  # cat=t3s_starter.enable; type=boolean; label=NavSidemap : EXT:t3s_starter/configuration/TS/nav/sidemap
+	enableNavSidemap = 1
+  # cat=t3s_starter.navSidemap; type=string; label=wrapCssClass : EXT:t3s_starter/configuration/TS/nav/sidemap
+   wrapCssClass = class="nav-sidemap"
+  # cat=t3s_starter.navSidemap; type=string; label=NOCssClass : EXT:t3s_starter/configuration/TS/nav/sidemap
+   NOCssClass = class="nav-sidemap-no"
+  # cat=t3s_starter.navSidemap; type=string; label=IFSUBCssClass : EXT:t3s_starter/configuration/TS/nav/sidemap
+   IFSUBCssClass = class="nav-sidemap-ifsub"
+  # cat=t3s_starter.navSidemap; type=string; label=ACTCssClass : EXT:t3s_starter/configuration/TS/nav/sidemap
+   ACTCssClass = class="nav-sidemap-act"
+  # cat=t3s_starter.navSidemap; type=string; label=CURCssClass : EXT:t3s_starter/configuration/TS/nav/sidemap
+   CURCssClass = class="nav-sidemap-cur"
+  # cat=t3s_starter.navSidemap; type=string; label=CURIFSUBCssClass : EXT:t3s_starter/configuration/TS/nav/sidemap
+   CURIFSUBCssClass = class="nav-sidemap-curifsub"
+  # cat=t3s_starter.navSidemap; type=string; label=entryLevel : EXT:t3s_starter/configuration/TS/nav/sidemap
+   entryLevel = 1
+  # cat=t3s_starter.navSidemap; type=text; label=navSubSecondLevel : EXT:t3s_starter/configuration/TS/nav/sidemap
+   navSubSecondLevel = 2 < .1
+  # cat=t3s_starter.navSidemap; type=text; label=navSubThirdLevel : EXT:t3s_starter/configuration/TS/nav/sidemap
+   navSubThirdLevel = 3 < .1
+}

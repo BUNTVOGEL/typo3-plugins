@@ -1,0 +1,71 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+includeLibs.tx_div = EXT:div/class.tx_div.php
+includeLibs.tx_sblanguageswitcher_controllers_languageSwitch = EXT:sb_languageswitcher/controllers/class.tx_sblanguageswitcher_controllers_languageSwitch.php
+plugin.tx_sblanguageswitcher_pi1.configuration{
+  validate{
+	  notInBuildArray = L,id
+	  parseStringLimit = 100
+  }
+  languages{
+      showOnlyPassivLink = 1
+      pidExcludeList =
+      contentFallBackUid =
+      disableAktivLink = 1
+      wrapAll = <ul class="nav-language">|</ul>
+      values{
+        1{
+	        label = Englisch
+	        wrap = <li><span class="info">Sprachauswahl:</span> |</li>
+        }
+        0{
+           label = Deutsch
+           wrap = <li><span class="info">Sprachauswahl:</span> |</li>
+        }
+      }
+  }
+}
+
+[globalVar = GP:L = 1]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      values{
+        0{
+           label = German
+           wrap = <li><span class="info">Choose language:</span> |</li>
+        }
+        1{
+	         label = English
+	         wrap = <li><span class="info">Choose language:</span> |</li>
+        }
+      }
+  }
+[global]
+plugin.tx_sblanguageswitcher.switchControllers < plugin.tx_sblanguageswitcher_pi1.configuration
+plugin.tx_sblanguageswitcher.switchControllers = USER_INT
+plugin.tx_sblanguageswitcher.switchControllers{
+		userFunc = tx_sblanguageswitcher_controllers_languageSwitch->main
+		action = languageSwitch
+		templatePath = EXT:sb_languageswitcher/templates
+		template = languageSwitch
+		setupPath = plugin.tx_sblanguageswitcher_pi1.configuration.
+}

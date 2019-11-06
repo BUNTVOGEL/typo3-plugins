@@ -1,0 +1,44 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navSub {
+  # cat=t3s_starter.enable; type=boolean; label=NavSub : EXT:t3s_starter/configuration/TS/nav/sub
+	enableNavSub = 1
+  # cat=t3s_starter.navSub; type=string; label=wrapCssClass : EXT:t3s_starter/configuration/TS/nav/sub
+   wrapCssClass = class="nav-sub"
+  # cat=t3s_starter.navSub; type=string; label=NOCssClass : EXT:t3s_starter/configuration/TS/nav/sub
+   NOCssClass = class="nav-sub-no"
+  # cat=t3s_starter.navSub; type=string; label=IFSUBCssClass : EXT:t3s_starter/configuration/TS/nav/sub
+   IFSUBCssClass = class="nav-sub-ifsub"
+  # cat=t3s_starter.navSub; type=string; label=ACTCssClass : EXT:t3s_starter/configuration/TS/nav/sub
+   ACTCssClass = class="nav-sub-act"
+  # cat=t3s_starter.navSub; type=string; label=CURCssClass : EXT:t3s_starter/configuration/TS/nav/sub
+   CURCssClass = class="nav-sub-cur"
+  # cat=t3s_starter.navSub; type=string; label=CURIFSUBCssClass : EXT:t3s_starter/configuration/TS/nav/sub
+   CURIFSUBCssClass = class="nav-sub-curifsub"
+  # cat=t3s_starter.navSub; type=string; label=entryLevel : EXT:t3s_starter/configuration/TS/nav/sub
+   entryLevel = 1
+  # cat=t3s_starter.navSub; type=text; label=navSubSecondLevel : EXT:t3s_starter/configuration/TS/nav/sub
+   navSubSecondLevel = 2 < .1
+  # cat=t3s_starter.navSub; type=text; label=navSubThirdLevel : EXT:t3s_starter/configuration/TS/nav/sub
+   navSubThirdLevel = 3 < .1
+}

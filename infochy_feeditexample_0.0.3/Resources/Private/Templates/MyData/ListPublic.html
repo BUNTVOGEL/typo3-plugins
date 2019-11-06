@@ -1,0 +1,32 @@
+<f:layout name="Default"/>
+
+
+<f:section name="main">
+	<h1 style="color:red;">Please SET the Record Storage Page in the Plugin</h1>
+	<h1>Listing-Public for MyData</h1>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<f:translate key="tx_infochyfeeditexample_domain_model_mydata.title"/>
+			</div>
+			<div class="col-md-6">
+				<f:translate key="tx_infochyfeeditexample_domain_model_mydata.image"/>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<f:widget.paginate objects="{myDatas}" as="paginatedMyDatas"
+												 configuration="{itemsPerPage: 1, insertAbove: 1, insertBelow: 0, maximumNumberOfLinks: 5}">
+				<f:for each="{paginatedMyDatas}" as="myData">
+					<f:render partial="MyData/ListPublic" arguments="{myData:myData}"/>
+				</f:for>
+			</f:widget.paginate>
+
+		</div>
+
+	</div>
+
+
+</f:section>

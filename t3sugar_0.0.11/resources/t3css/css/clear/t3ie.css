@@ -1,0 +1,13 @@
+/* The IE Doubled Float-Margin Bug @see http://positioniseverything.net/explorer/doubled-margin.html */
+.clear { display: inline-block }
+
+/* How To Clear Floats Without Structural Markup
+  @see http://www.positioniseverything.net/easyclearing.html
+*/
+.clear { display: block }
+* html .clear { height: 1% }
+.clear-ie {
+    display:block;
+    width: 100%;
+    font-size:0px;
+}

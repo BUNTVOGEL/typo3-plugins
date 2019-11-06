@@ -1,0 +1,15 @@
+<f:layout name="Default"/>
+
+
+<f:section name="main">
+	<f:link.action action="list">Back to list</f:link.action>
+	<br/>
+	<f:link.action action="new">New MyData</f:link.action>
+	<br/>
+	FeUser: {feUser.username}
+	<h1>Single View for MyData</h1>
+
+	<f:flashMessages/>
+	<f:render partial="MyData/Properties" arguments="{myData:myData}"/>
+
+</f:section>

@@ -1,0 +1,20 @@
+<table class="tx-infochy-feeditexample">
+	<tr>
+		<td>
+			<f:translate key="tx_infochyfeeditexample_domain_model_mydata.title"/>
+		</td>
+		<td>
+			{myData.title}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_infochyfeeditexample_domain_model_mydata.image"/>
+		</td>
+		<td>
+			<f:if condition="{myData.image}">
+				<f:image image="{myData.image}" alt="" width="200"/>
+			</f:if>
+		</td>
+	</tr>
+</table>

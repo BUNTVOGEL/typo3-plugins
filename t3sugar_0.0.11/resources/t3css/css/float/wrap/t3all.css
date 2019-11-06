@@ -1,0 +1,5 @@
+.float-wrap-middlewrap{float:left;width:100%}
+.float-wrap-middle{margin: 0 25%;}
+.float-wrap-left{float:left;width:25%;margin-left:-100%;}
+.float-wrap-right{float:left;width:25%;margin-left:-25%}
+.float-wrap-clear{clear:left;width:100%;display:none;}

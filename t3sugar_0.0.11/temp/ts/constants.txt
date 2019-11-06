@@ -1,0 +1,1564 @@
+
+##########################################################################################
+#### config: configlibrary/ts/config/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/config/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+config{
+  # cat=t3sugar.enable; type=boolean; label=Config : EXT:t3sugar/configuration/TS/config
+	enableConfig = 1
+  # cat=t3sugar.config; type=string; label=absRefPrefix : EXT:t3sugar/configuration/TS/config
+  absRefPrefix =
+  # cat=t3sugar.config; type=string; label=doctypeSwitch : EXT:t3sugar/configuration/TS/config
+  doctypeSwitch = utf-8
+  # cat=t3sugar.config; type=string; label=doctype : EXT:t3sugar/configuration/TS/config
+	doctype = xhtml_strict
+  # cat=t3sugar.config; type=string; label=xmlprologue : EXT:t3sugar/configuration/TS/config
+	xmlprologue = none
+  # cat=t3sugar.config; type=boolean; label=no_cache : EXT:t3sugar/configuration/TS/config
+	no_cache = 0
+  # cat=t3sugar.config; type=boolean; label=disableImgBorderAttr : EXT:t3sugar/configuration/TS/config
+	disableImgBorderAttr = 1
+  # cat=t3sugar.config; type=boolean; label=index_enable : EXT:t3sugar/configuration/TS/config
+	index_enable = 1
+  # cat=t3sugar.config; type=boolean; label=spamProtectEmailAddresses : EXT:t3sugar/configuration/TS/config
+  spamProtectEmailAddresses = 2
+  # cat=t3sugar.config; type=string; label=spamProtectEmailAddresses_atSubst : EXT:t3sugar/configuration/TS/config
+  spamProtectEmailAddresses_atSubst = (at)
+  # cat=t3sugar.config; type=boolean; label=disablePrefixComment : EXT:t3sugar/configuration/TS/config
+  disablePrefixComment = 1
+  # cat=t3sugar.config; type=string; label=extTarget : EXT:t3sugar/configuration/TS/config
+  extTarget = _blank
+  # cat=t3sugar.config; type=string; label=linkVars : EXT:t3sugar/configuration/TS/config
+  linkVars = L
+  # cat=t3sugar.config; type=boolean; label=pageTitleFirst : EXT:t3sugar/configuration/TS/config
+  pageTitleFirst = 1
+  # cat=t3sugar.config; type=string; label=xhtml_cleaning : EXT:t3sugar/configuration/TS/config
+  xhtml_cleaning = all
+  # cat=t3sugar.config; type=string; label=removeDefaultJS : EXT:t3sugar/configuration/TS/config
+  removeDefaultJS = external
+  # cat=t3sugar.config; type=boolean; label=inlineStyle2TempFile : EXT:t3sugar/configuration/TS/config
+  inlineStyle2TempFile = 1
+  # cat=t3sugar.config; type=boolean; label=disablePrefixComment : EXT:t3sugar/configuration/TS/config
+  disablePrefixComment = 1
+  # cat=t3sugar.config; type=string; label=notification_email_urlmode : EXT:t3sugar/configuration/TS/config
+  notification_email_urlmode = all
+  # cat=t3sugar.config; type=string; label=simulateStaticDocuments_pEnc_onlyP : EXT:t3sugar/configuration/TS/config
+  simulateStaticDocuments_pEnc_onlyP =
+  # cat=t3sugar.config; type=boolean; label=sys_language_content : EXT:t3sugar/configuration/TS/config
+  sys_language_content = 0
+  # cat=t3sugar.config; type=boolean; label=sys_language_contentOL : EXT:t3sugar/configuration/TS/config
+  sys_language_contentOL = 0
+  # cat=t3sugar.config; type=boolean; label=simulateStaticDocuments : EXT:t3sugar/configuration/TS/config
+  simulateStaticDocuments = 0
+}
+
+## config: RealUrl
+config{
+  # cat=t3sugar.config.RealUrl; type=string; label=baseURL : EXT:t3sugar/configuration/TS/config
+  baseURL =
+  # cat=t3sugar.config.RealUrl; type=boolean; label=tx_realurl_enable : EXT:t3sugar/configuration/TS/config
+  tx_realurl_enable = 1
+}
+
+## config: Language Default
+config{
+  # cat=t3sugar.config.language.default; type=string; label=language  : EXT:t3sugar/configuration/TS/config
+  language00 = local
+  # cat=t3sugar.config.language.default; type=string; label=htmlTag_langKey : EXT:t3sugar/configuration/TS/config
+  htmlTag_langKey00 = local
+  # cat=t3sugar.config.language.default; type=string; label=htmlTag_langKey : EXT:t3sugar/configuration/TS/config
+  locale_all00 = local
+  # cat=t3sugar.config.language.default; type=string; label=sys_language_mode : EXT:t3sugar/configuration/TS/config
+  sys_language_mode00 =
+}
+## config: Language 1
+config{
+  # cat=t3sugar.config.language.01; type=string; label=language   : EXT:t3sugar/configuration/TS/config
+  language01 = en
+  # cat=t3sugar.config.language.01; type=string; label=htmlTag_langKey  : EXT:t3sugar/configuration/TS/config
+  htmlTag_langKey01 = en
+  # cat=t3sugar.config.language.01; type=string; label=locale_all : EXT:t3sugar/configuration/TS/config
+  locale_all01 = english
+  # cat=t3sugar.config.language.01; type=string; label=sys_language_mode : EXT:t3sugar/configuration/TS/config
+  sys_language_mode01 =
+}
+## config: Language 2
+config{
+  # cat=t3sugar.config.language.02; type=string; label=language   : EXT:t3sugar/configuration/TS/config
+  language02 = fr
+  # cat=t3sugar.config.language.02; type=string; label=htmlTag_langKey  : EXT:t3sugar/configuration/TS/config
+  htmlTag_langKey02 = fr
+  # cat=t3sugar.config.language.02; type=string; label=locale_all  : EXT:t3sugar/configuration/TS/config
+  locale_all02 = fr_FR
+  # cat=t3sugar.config.language.02; type=string; label=sys_language_mode : EXT:t3sugar/configuration/TS/config
+  sys_language_mode02 =
+}
+## config: Language 3
+config{
+  # cat=t3sugar.config.language.03; type=string; label=language   : EXT:t3sugar/configuration/TS/config
+  language03 = de
+  # cat=t3sugar.config.language.03; type=string; label=htmlTag_langKey  : EXT:t3sugar/configuration/TS/config
+  htmlTag_langKey03 = de
+  # cat=t3sugar.config.language.03; type=string; label=locale_all  : EXT:t3sugar/configuration/TS/config
+  locale_all03 = de_DE
+  # cat=t3sugar.config.language.03; type=string; label=sys_language_mode : EXT:t3sugar/configuration/TS/config
+  sys_language_mode03 =
+}
+## config: Language 4
+config{
+  # cat=t3sugar.config.language.04; type=string; label=language   : EXT:t3sugar/configuration/TS/config
+  language04 = es
+  # cat=t3sugar.config.language.04; type=string; label=htmlTag_langKey  : EXT:t3sugar/configuration/TS/config
+  htmlTag_langKey04 = es
+  # cat=t3sugar.config.language.04; type=string; label=locale_all  : EXT:t3sugar/configuration/TS/config
+  locale_all04 = es_ES
+  # cat=t3sugar.config.language.04; type=string; label=sys_language_mode : EXT:t3sugar/configuration/TS/config
+  sys_language_mode04 =
+}
+
+##########################################################################################
+#### config: configlibrary/ts/plugin/rlmp_tmplselector/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/plugin/rlmp_tmplselector/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+plugin.tx_rlmptmplselector_pi1 {
+  # cat=t3sugar.enable; type=boolean; label=rlmp_tmplselector : EXT:t3sugar/configuration/TS/plugin/rlmp_tmplselector
+  enableRlmpTemplSelector = 1
+  # cat=t3sugar.theme.system; type=string; label=Rlmptmplselector templatePathMain : EXT:t3sugar/configuration/TS/plugin/rlmp_tmplselector
+  templatePathMain = /resources/t3css/templates/
+  # cat=t3sugar.theme.system; type=string; label=Rlmptmplselector templatePathSub : EXT:t3sugar/configuration/TS/plugin/rlmp_tmplselector
+  templatePathSub = /resources/t3css/templates/content/
+  # cat=t3sugar.theme.system; type=string; label=Rlmptmplselector defaultTemplateFileNameMain : EXT:t3sugar/configuration/TS/plugin/rlmp_tmplselector
+  defaultTemplateFileNameMain = five-boxes.html
+  # cat=t3sugar.theme.system; type=string; label=Rlmptmplselector defaultTemplateFileNameSub : EXT:t3sugar/configuration/TS/plugin/rlmp_tmplselector
+  defaultTemplateFileNameSub = precontent25-content50-postcontent25.html
+}
+
+##########################################################################################
+#### config: configlibrary/ts/plugin/automaketemplate/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/plugin/automaketemplate/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+plugin.tx_automaketemplate_pi1 {
+  # cat=t3sugar.enable; type=boolean; label=tx_automaketemplate_pi1 : EXT:t3sugar/configuration/TS/plugin/automaketemplate
+	enableAutoMakeTemplate = 1
+	# cat=t3sugar.plugin.tx_automaketemplate_pi1; type=string; label=content : EXT:t3sugar/configuration/TS/plugin/automaketemplate
+  content = plugin.tx_rlmptmplselector_pi1
+  # cat=t3sugar.plugin.tx_automaketemplate_pi1; type=string; label=DOCUMENT_BODY : EXT:t3sugar/configuration/TS/plugin/automaketemplate
+  elements.BODY.all.subpartMarker = DOCUMENT_BODY
+  # cat=t3sugar.plugin.tx_automaketemplate_pi1; type=string; label=DOCUMENT_HEADER : EXT:t3sugar/configuration/TS/plugin/automaketemplate
+  elements.HEAD.all.subpartMarker = DOCUMENT_HEADER
+  # cat=t3sugar.plugin.tx_automaketemplate_pi1; type=string; label=rmTagSections : EXT:t3sugar/configuration/TS/plugin/automaketemplate
+  elements.HEAD.rmTagSections = title
+  # cat=t3sugar.theme.system; type=string; label=Automaketemplate relPathPrefix : EXT:t3sugar/configuration/TS/plugin/automaketemplate
+  relPathPrefix = /resources/t3css/templates
+}
+
+##########################################################################################
+#### config: configlibrary/ts/plugin/sb_languageswitcher/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/plugin/sb_languageswitcher/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+##########################################################################################
+#### config: configlibrary/ts/plugin/rtehtmlarea/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/plugin/rtehtmlarea/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+##########################################################################################
+#### config: configlibrary/ts/nav/language/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/nav/language/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+##########################################################################################
+#### config: configlibrary/ts/nav/breadcrumb/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/nav/breadcrumb/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navBreadcrumb{
+  # cat=t3sugar.enable; type=boolean; label=NavBreadcrumb : EXT:t3sugar/configuration/TS/nav/breadcrumb
+	enablenavBreadcrumb = 1
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHere : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHere = <span class="info">Sie sind hier:</span>
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHereEn : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHereEn = <span class="info">You are here:</span>
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHereFr : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHereFr = <span class="info">Vous êtes ici:</span>
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHere : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHereDe = <span class="info">Sie sind hier:</span>
+  # cat=t3sugar.navBreadcrumb; type=string; label=youAreHere : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  youAreHereEs = <span class="info">You are here:</span>
+  # cat=t3sugar.navRoot; type=string; label=wrapCssClass : EXT:t3sugar/configuration/TS/nav/root
+   wrapCssClass = id="menu-breadcrumb" class="menu-line"
+  # cat=t3sugar.navRoot; type=string; label=cssClassCurrent : EXT:t3sugar/configuration/TS/nav/root
+   cssClassCurrent = class="current"
+  # cat=t3sugar.navBreadcrumb; type=string; label=target : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  target = _self
+  # cat=t3sugar.navBreadcrumb; type=string; label=gt : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  gt =
+  # cat=t3sugar.navBreadcrumb; type=string; label=range : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  range = 1|-1
+  # cat=t3sugar.navBreadcrumb; type=boolean; label=setNavBreadcrumbRecords : EXT:t3sugar/configuration/TS/nav/breadcrumb
+  setnavBreadcrumbRecords = 1
+}
+
+##########################################################################################
+#### config: configlibrary/ts/nav/special/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/nav/special/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+
+lib.navSpecial{
+  # cat=t3sugar.enable; type=boolean; label=NavSpecial : EXT:t3sugar/configuration/TS/nav/special
+	enableNavSpecial = 1
+  # cat=t3sugar.navSpecial; type=string; label=beforeText : EXT:t3sugar/configuration/TS/nav/special
+   beforeText =
+  # cat=t3sugar.navSpecial; type=string; label=afterText : EXT:t3sugar/configuration/TS/nav/special
+   afterText =
+  # cat=t3sugar.specialListPid; type=string; label=afterText : EXT:t3sugar/configuration/TS/nav/special
+   specialListPid = 18,19,20
+}
+
+##########################################################################################
+#### config: configlibrary/ts/nav/sidemap/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/nav/sidemap/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navSidemap {
+  # cat=t3sugar.enable; type=boolean; label=NavSidemap : EXT:t3sugar/configuration/TS/nav/sidemap
+	enableNavSidemap = 1
+  # cat=t3sugar.navSidemap; type=string; label=wrapCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   wrapCssClass = class="nav-sidemap"
+  # cat=t3sugar.navSidemap; type=string; label=NOCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   NOCssClass = class="nav-sidemap-no"
+  # cat=t3sugar.navSidemap; type=string; label=IFSUBCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   IFSUBCssClass = class="nav-sidemap-ifsub"
+  # cat=t3sugar.navSidemap; type=string; label=ACTCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   ACTCssClass = class="nav-sidemap-act"
+  # cat=t3sugar.navSidemap; type=string; label=CURCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   CURCssClass = class="nav-sidemap-cur"
+  # cat=t3sugar.navSidemap; type=string; label=CURIFSUBCssClass : EXT:t3sugar/configuration/TS/nav/sidemap
+   CURIFSUBCssClass = class="nav-sidemap-curifsub"
+  # cat=t3sugar.navSidemap; type=string; label=entryLevel : EXT:t3sugar/configuration/TS/nav/sidemap
+   entryLevel = 1
+  # cat=t3sugar.navSidemap; type=text; label=navSubSecondLevel : EXT:t3sugar/configuration/TS/nav/sidemap
+   navSubSecondLevel = 2 < .1
+  # cat=t3sugar.navSidemap; type=text; label=navSubThirdLevel : EXT:t3sugar/configuration/TS/nav/sidemap
+   navSubThirdLevel = 3 < .1
+}
+
+##########################################################################################
+#### config: configlibrary/ts/nav/root/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/nav/root/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navRoot {
+  # cat=t3sugar.enable; type=boolean; label=NavRoot : EXT:t3sugar/configuration/TS/nav/root
+	enableNavRoot = 1
+  # cat=t3sugar.navRoot; type=string; label=wrapCssClass : EXT:t3sugar/configuration/TS/nav/root
+   wrapCssClass = id="menu-root" class="menu-line"
+  # cat=t3sugar.navRoot; type=string; label=excludeUidList : EXT:t3sugar/configuration/TS/nav/root
+  excludeUidList =
+  # cat=t3sugar.navRoot; type=string; label=cssCurrent : EXT:t3sugar/configuration/TS/nav/root
+  cssCurrent = current
+}
+
+##########################################################################################
+#### config: configlibrary/ts/nav/sub/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/nav/sub/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navSub {
+  # cat=t3sugar.enable; type=boolean; label=NavSub : EXT:t3sugar/configuration/TS/nav/sub
+	enableNavSub = 1
+  # cat=t3sugar.navSub; type=string; label=wrapCssClass : EXT:t3sugar/configuration/TS/nav/sub
+   wrapCssClass = id="menu-sub" class="menu-list"
+  # cat=t3sugar.navSub; type=string; label=NOCssClass : EXT:t3sugar/configuration/TS/nav/sub
+   NOCssClass = class="no"
+  # cat=t3sugar.navSub; type=string; label=IFSUBCssClass : EXT:t3sugar/configuration/TS/nav/sub
+   IFSUBCssClass = class="ifsub"
+  # cat=t3sugar.navSub; type=string; label=ACTCssClass : EXT:t3sugar/configuration/TS/nav/sub
+   ACTCssClass = class="active"
+  # cat=t3sugar.navSub; type=string; label=CURCssClass : EXT:t3sugar/configuration/TS/nav/sub
+   CURCssClass = class="current"
+  # cat=t3sugar.navSub; type=string; label=CURIFSUBCssClass : EXT:t3sugar/configuration/TS/nav/sub
+   CURIFSUBCssClass = class="curifsub"
+  # cat=t3sugar.navSub; type=string; label=entryLevel : EXT:t3sugar/configuration/TS/nav/sub
+   entryLevel = 1
+  # cat=t3sugar.navSub; type=text; label=navSubSecondLevel : EXT:t3sugar/configuration/TS/nav/sub
+   navSubSecondLevel = 2 < .1
+  # cat=t3sugar.navSub; type=text; label=navSubThirdLevel : EXT:t3sugar/configuration/TS/nav/sub
+   navSubThirdLevel = 3 < .1
+}
+
+##########################################################################################
+#### config: configlibrary/ts/template/footer/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/template/footer/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: barthel@sunbeam-berlin.de
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.templateFooter{
+
+
+
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/template/header/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/template/header/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: barthel@sunbeam-berlin.de
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+##########################################################################################
+#### config: configlibrary/ts/template/content/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/template/content/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: barthel@sunbeam-berlin.de
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+
+##########################################################################################
+#### config: configlibrary/ts/template/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/template/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: barthel@sunbeam-berlin.de
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+lib.template{
+  # cat=t3sugar.enable; type=boolean; label=template : EXT:t3sugar/configuration/TS/templates
+  enableTemplate = 1
+  # cat=t3sugar.template; type=string; label=beforeInclude : EXT:t3sugar/configuration/TS/templates
+  beforeInclude =
+  # cat=t3sugar.template; type=string; label=afterInclude : EXT:t3sugar/configuration/TS/templates
+  afterInclude =
+  # cat=t3sugar.theme.system; type=string; label=file : EXT:t3sugar/configuration/TS/templates
+  template = plugin.tx_automaketemplate_pi1
+  # cat=t3sugar.template; type=string; label=workOnSubpart : EXT:t3sugar/configuration/TS/templates
+  workOnSubpart = DOCUMENT_BODY
+  # cat=t3sugar.template; type=string; label=Subparts header : EXT:t3sugar/configuration/TS/templates
+  subparts.b1b2 = lib.navSpecial
+  # cat=t3sugar.template; type=string; label=Subparts header : EXT:t3sugar/configuration/TS/templates
+  subparts.b2 = lib.templateHeader
+  # cat=t3sugar.template; type=string; label=Subparts navigation : EXT:t3sugar/configuration/TS/templates
+  subparts.b3b3 = lib.navBreadcrumb
+  # cat=t3sugar.template; type=string; label=Language navigation : EXT:t3sugar/configuration/TS/templates
+  subparts.b3b2 = plugin.tx_sblanguageswitcher.switchControllers
+  # cat=t3sugar.template; type=string; label=Subparts content : EXT:t3sugar/configuration/TS/templates
+  subparts.b4 = lib.templateContent
+  # cat=t3sugar.template; type=string; label=Subparts footer :EXT:t3sugar/configuration/TS/templates
+  subparts.b5 = lib.templateFooter
+}
+
+##########################################################################################
+#### config: configlibrary/ts/libcss/headerlogo/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/libcss/headerlogo/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+
+lib.libcssHeaderlogo{
+	# cat=t3sugar.lib.libcssHeaderlogo; type=string; label=wrap : EXT:t3sugar/typo3config/TS/libcss/libcssHeaderlogo
+  wrap = .headerlogo{background-image: url(uploads/media/|);}
+}
+
+##########################################################################################
+#### config: configlibrary/ts/libcss/headerimage/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/libcss/headerimage/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+
+lib.libcssHeaderimage{
+	# cat=t3sugar.lib.libcssHeaderimage; type=string; label=wrap : EXT:t3sugar/typo3config/TS/libcss/headerimage
+  wrap = #box1{background-image: url(uploads/media/|);}
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/ie/template/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/ie/template/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageCssIeTemplate{
+   # cat=t3sugar.pageCssIeTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/ie/template
+   10.file = /temp/css/ie.css
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/ie/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/ie/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageCssIe{
+# cat=t3sugar.pageCssIe; type=string; label=typeNum : EXT:t3sugar/configuration/TS/html/css/ie/
+  typeNum = 22
+# cat=t3sugar.pageCssIe; type=string; label=PAGE COA 20 : EXT:t3sugar/configuration/TS/html/css/ie/
+  20 = lib.pageCssIeTemplate
+# cat=t3sugar.pageCssIe; type=string; label=PAGE COA 40 : EXT:t3sugar/configuration/TS/html/css/ie/
+  40 =
+# cat=t3sugar.pageCssIe; type=string; label=PAGE COA 50 : EXT:t3sugar/configuration/TS/html/css/ie/
+  50 =
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/all/template/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/all/template/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageCssAllTemplate{
+   # cat=t3sugar.pageCssAllTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/all/template
+   10.file = /temp/css/all.css
+   # cat=t3sugar.pageCssAllTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/all/template
+   20.file = /temp/css/obsolet.css
+   # cat=t3sugar.pageCssAllTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/all/template
+   30.file = /temp/css/debug.css
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/all/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/all/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageCssAll{
+# cat=t3sugar.pageCssAll; type=string; label=typeNum : EXT:t3sugar/configuration/TS/html/css/all/
+  typeNum = 20
+# cat=t3sugar.pageCssAll; type=string; label=PAGE COA 20 : EXT:t3sugar/configuration/TS/html/css/all/
+  20 = lib.pageCssAllTemplate
+# cat=t3sugar.pageCssAll; type=string; label=PAGE COA 40 : EXT:t3sugar/configuration/TS/html/css/all/
+  40 =
+# cat=t3sugar.pageCssAll; type=string; label=PAGE COA 50 : EXT:t3sugar/configuration/TS/html/css/all/
+  50 =
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/screen/template/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/screen/template/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageCssScreenTemplate{
+   # cat=t3sugar.pageCssScreenTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/screen/template
+   10.file = /temp/css/screen.css
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/screen/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/screen/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageCssScreen{
+# cat=t3sugar.pageCssScreen; type=string; label=typeNum : EXT:t3sugar/configuration/TS/html/css/screen/
+  typeNum = 23
+# cat=t3sugar.pageCssScreen; type=string; label=PAGE COA 20 : EXT:t3sugar/configuration/TS/html/css/screen/
+  20 = lib.pageCssScreenTemplate
+# cat=t3sugar.pageCssScreen; type=string; label=PAGE COA 40 : EXT:t3sugar/configuration/TS/html/css/screen/
+  40 =
+# cat=t3sugar.pageCssScreen; type=string; label=PAGE COA 50 : EXT:t3sugar/configuration/TS/html/css/screen/
+  50 =
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/print/template/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/print/template/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageCssPrintTemplate{
+   # cat=t3sugar.pageCssPrintTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/print/template
+   10.file = /temp/css/print.css
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/print/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/print/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageCssPrint{
+# cat=t3sugar.pageCssPrint; type=string; label=typeNum : EXT:t3sugar/configuration/TS/html/css/print/
+  typeNum = 21
+# cat=t3sugar.pageCssPrint; type=string; label=PAGE COA 20 : EXT:t3sugar/configuration/TS/html/css/print/
+  20 = lib.pageCssPrintTemplate
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/t3ie/template/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/t3ie/template/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageCsst3ieTemplate{
+   # cat=t3sugar.pageCsst3ieTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/t3ie/template
+   10.file = /temp/css/t3ie.css
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/t3ie/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/t3ie/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageCsst3ie{
+# cat=t3sugar.pageCsst3ie; type=string; label=typeNum : EXT:t3sugar/configuration/TS/html/css/t3ie/
+  typeNum = 32
+# cat=t3sugar.pageCsst3ie; type=string; label=PAGE COA 20 : EXT:t3sugar/configuration/TS/html/css/t3ie/
+  20 = lib.pageCsst3ieTemplate
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/t3all/template/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/t3all/template/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageCsst3allTemplate{
+   # cat=t3sugar.pageCsst3allTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/t3all/template
+   10.file = /temp/css/t3all.css
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/t3all/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/t3all/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageCsst3all{
+# cat=t3sugar.pageCsst3all; type=string; label=typeNum : EXT:t3sugar/configuration/TS/html/css/t3all/
+  typeNum = 33
+# cat=t3sugar.pageCsst3all; type=string; label=PAGE COA 20 : EXT:t3sugar/configuration/TS/html/css/t3all/
+  20 = lib.pageCsst3allTemplate
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/t3screen/template/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/t3screen/template/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageCsst3screenTemplate{
+   # cat=t3sugar.pageCsst3screenTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/t3screen/template
+   10.file = /temp/css/t3screen.css
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/t3screen/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/t3screen/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageCsst3screen{
+# cat=t3sugar.pageCsst3screen; type=string; label=typeNum : EXT:t3sugar/configuration/TS/html/css/t3screen/
+  typeNum = 30
+# cat=t3sugar.pageCsst3screen; type=string; label=PAGE COA 20 : EXT:t3sugar/configuration/TS/html/css/t3screen/
+  20 = lib.pageCsst3screenTemplate
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/t3print/template/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/t3print/template/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageCsst3printTemplate{
+   # cat=t3sugar.pageCsst3printTemplate; type=string; label=tags : EXT:t3sugar/configuration/TS/html/css/t3print/template
+   10.file = /temp/css/t3print.css
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/t3print/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/css/t3print/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageCsst3all{
+# cat=t3sugar.pageCsst3all; type=string; label=typeNum : EXT:t3sugar/configuration/TS/html/css/t3all/
+  typeNum = 31
+# cat=t3sugar.pageCsst3all; type=string; label=PAGE COA 20 : EXT:t3sugar/configuration/TS/html/css/t3all/
+  20 = lib.pageCsst3allTemplate
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/include/libs/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/html/include/libs/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/include/css/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/html/include/css/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlIncludeCss{
+  defaultFile =
+  alternateFile =
+  printFile =
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/include/js/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/html/include/js/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/header/iehack/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/html/header/iehack/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/header/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/html/header/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: barthel@sunbeam-berlin.de
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlHeader{
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/meta/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/html/meta/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+
+lib.pageHtmlMeta{
+  # cat=t3sugar.enable; type=boolean; label=PageMeta : EXT:t3sugar/typo3config/TS/page/html/meta
+	enablePageMeta = 1
+  # cat=t3sugar.pageHtmlMeta; type=string; label=description : EXT:t3sugar/typo3config/TS/page/html/meta
+  description = Beschreibung
+  # cat=t3sugar.pageHtmlMeta; type=string; label=keywords : EXT:t3sugar/typo3config/TS/page/html/meta
+  keywords = Keywords
+  # cat=t3sugar.pageHtmlMeta; type=string; label=author : EXT:t3sugar/typo3config/TS/page/html/meta
+  author = www.t3sugarugar.de
+  # cat=t3sugar.pageHtmlMeta; type=string; label=robots : EXT:t3sugar/typo3config/TS/page/html/meta
+  robots = index, follow
+  # cat=t3sugar.pageHtmlMeta; type=string; label=MSSmartTagsPreventParsing : EXT:t3sugar/typo3config/TS/page/html/meta
+  MSSmartTagsPreventParsing = true
+  # cat=t3sugar.pageHtmlMeta; type=string; label=imagetoolbar : EXT:t3sugar/typo3config/TS/page/html/meta
+  imagetoolbar  = false
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/config/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/html/config/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlConfig{
+  # cat=t3sugar.enable; type=boolean; label=pageHtmlConfig : EXT:t3sugar/typo3config/TS/page/html/config
+  enablepageHtmlConfig = 1
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=admPanel : EXT:t3sugar/typo3config/TS/page/html/config
+  admPanel = 0
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=cache : EXT:t3sugar/typo3config/TS/page/html/config
+  cache = 1
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=no_cache : EXT:t3sugar/typo3config/TS/page/html/config
+  no_cache = 1
+  # cat=t3sugar.pageHtmlConfig; type=string; label=doctype : EXT:t3sugar/typo3config/TS/page/html/config
+  doctype = xhtml_trans
+  # cat=t3sugar.pageHtmlConfig; type=string; label=xhtml_cleaning : EXT:t3sugar/typo3config/TS/page/html/config
+  xhtml_cleaning = all
+  # cat=t3sugar.pageHtmlConfig; type=string; label=xmlprologue : EXT:t3sugar/typo3config/TS/page/html/config
+  xmlprologue = none
+  # cat=t3sugar.pageHtmlConfig; type=string; label=htmlTag_langKey : EXT:t3sugar/typo3config/TS/page/html/config
+  htmlTag_langKey = en
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=index_enable : EXT:t3sugar/typo3config/TS/page/html/config
+  index_enable = 1
+  # cat=t3sugar.pageHtmlConfig; type=string; label=metaCharset : EXT:t3sugar/typo3config/TS/page/html/config
+  metaCharset = utf-8
+  # cat=t3sugar.pageHtmlConfig; type=string; label=additionalHeaders : EXT:t3sugar/typo3config/TS/page/html/config
+  additionalHeaders = Content-Type:text/html;charset=utf-8
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=inlineStyle2TempFile : EXT:t3sugar/typo3config/TS/page/html/config
+  inlineStyle2TempFile = 1
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=disablePrefixComment : EXT:t3sugar/typo3config/TS/page/html/config
+  disablePrefixComment = 1
+  # cat=t3sugar.pageHtmlConfig; type=string; label=removeDefaultJS : EXT:t3sugar/typo3config/TS/page/html/config
+  removeDefaultJS = external
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=cache_clearAtMidnight : EXT:t3sugar/typo3config/TS/page/html/config
+  cache_clearAtMidnight = 1
+  # cat=t3sugar.pageHtmlConfig; type=string; label=spamProtectEmailAddresses : EXT:t3sugar/typo3config/TS/page/html/config
+  spamProtectEmailAddresses = ascii
+  # cat=t3sugar.pageHtmlConfig; type=string; label=headerComment : EXT:t3sugar/typo3config/TS/page/html/config
+  headerComment = T3S Typo3 Sugar
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=simulateStaticDocuments : EXT:t3sugar/typo3config/TS/page/html/config
+  simulateStaticDocuments = 0
+  # cat=t3sugar.pageHtmlConfig; type=string; label=simulateStaticDocuments_pEnc : EXT:t3sugar/typo3config/TS/page/html/config
+  simulateStaticDocuments_pEnc = md5
+  # cat=t3sugar.pageHtmlConfig; type=string; label=simulateStaticDocuments_addTitle : EXT:t3sugar/typo3config/TS/page/html/config
+  simulateStaticDocuments_addTitle = 30
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/htmltv/
+#### path: /home/u0026796678/public_html/programm/dummyXX/typo3conf/ext/t3sugar/configlibrary/ts/page/htmltv/constants.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageHtml{
+# cat=t3sugar.pageHtml; type=string; label=typeNum : EXT:t3sugar/typo3config/TS/html/page/
+  typeNum = 0
+# cat=t3sugar.pageHtml; type=string; label=admPanelStyles : EXT:t3sugar/typo3config/TS/html/page/
+  admPanelStyles = 1
+# cat=t3sugar.theme.system; type=string; label=shortcutIcon : EXT:t3sugar/typo3config/TS/html/page/
+  shortcutIcon = /resources/images/shortcutIcon.gif
+# cat=t3sugar.pageHtml; type=string; label=config : EXT:t3sugar/typo3config/TS/html/page/
+  config = lib.pageHtmlConfig
+# cat=t3sugar.pageHtml; type=string; label=includeLibs : EXT:t3sugar/typo3config/TS/html/page/
+  includeLibs = lib.pageHtmlIncludeLibs
+# cat=t3sugar.pageHtml; type=string; label=includeCSS : EXT:t3sugar/typo3config/TS/html/page/
+  includeCSS = lib.pageHtmlIncludeCss
+# cat=t3sugar.pageHtml; type=string; label=includeJS : EXT:t3sugar/typo3config/TS/html/page/
+  includeJS = lib.pageHtmlIncludeJs
+# cat=t3sugar.pageHtml; type=string; label=meta : EXT:t3sugar/typo3config/TS/html/page/
+  meta = lib.pageMeta
+# cat=t3sugar.pageHtml; type=string; label=headerData : EXT:t3sugar/typo3config/TS/html/page/
+  headerData = lib.pageHtmlHeader
+# cat=t3sugar.pageHtml; type=string; label=PAGE COA 20 : EXT:t3sugar/typo3config/TS/html/page/
+  20 = lib.template
+}
+
+
+config.baseURL=http://t3sugar.info/programm/dummyXX/
+t3sugarEXTKEY=EXT:t3sugar

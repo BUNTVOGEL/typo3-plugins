@@ -1,0 +1,112 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    111,
+                    71
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
+                    "customActions": [
+                        "cobject",
+                        "plugin"
+                    ]
+                },
+                "name": "Data",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "968675606545"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "749021640556"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": ""
+        },
+        "extensionKey": "infochy_cobject",
+        "name": "Extbase cobject Plugin in Fluid Example ",
+        "originalExtensionKey": "infochy_mm",
+        "originalVendorName": "Infochy",
+        "persons": [
+            {
+                "company": "infochy",
+                "email": "mb@infochy.de",
+                "name": "Micha Barthel",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "plugin",
+                "name": "Plugin Extbase Fluid Example "
+            },
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "cobject",
+                "name": "Plugin Extbase Fluid cobject Example"
+            }
+        ],
+        "vendorName": "Infochy"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-02-27 11:10",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}

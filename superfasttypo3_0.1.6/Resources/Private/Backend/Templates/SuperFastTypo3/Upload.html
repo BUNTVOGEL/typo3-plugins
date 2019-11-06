@@ -1,0 +1,16 @@
+<f:layout name="Default"/>
+
+
+<f:section name="content">
+	<f:link.action action="list">Back to Plugin Manager</f:link.action>
+	<h1>Upload SuperFastTypo3 Marker-Plugin</h1>
+
+
+	<f:form action="uploadzip" enctype="multipart/form-data" name="uploadzip">
+
+		<f:form.upload name="zipfile"/>
+		<br/>
+
+		<f:form.submit value="Upload"/>
+	</f:form>
+</f:section>

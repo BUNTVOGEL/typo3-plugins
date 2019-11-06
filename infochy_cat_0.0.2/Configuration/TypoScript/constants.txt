@@ -1,0 +1,15 @@
+
+plugin.tx_infochycat_plugin {
+	view {
+		# cat=plugin.tx_infochycat_plugin/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:infochy_cat/Resources/Private/Templates/
+		# cat=plugin.tx_infochycat_plugin/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:infochy_cat/Resources/Private/Partials/
+		# cat=plugin.tx_infochycat_plugin/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:infochy_cat/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_infochycat_plugin//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

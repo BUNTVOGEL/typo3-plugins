@@ -1,0 +1,123 @@
+{
+	"modules": [
+		{
+			"config": {
+				"position": [
+					213,
+					83
+				]
+			},
+			"name": "New Model Object",
+			"value": {
+				"actionGroup": {
+					"_default0_list": true,
+					"_default1_show": true,
+					"_default2_new_create": true,
+					"_default3_edit_update": true,
+					"_default4_delete": true,
+					"customActions": [
+						"showPublic",
+						"listPublic"
+					]
+				},
+				"name": "MyData",
+				"objectsettings": {
+					"addDeletedField": true,
+					"addHiddenField": true,
+					"addStarttimeEndtimeFields": true,
+					"aggregateRoot": true,
+					"categorizable": false,
+					"description": "",
+					"mapToTable": "",
+					"parentClass": "",
+					"sorting": false,
+					"type": "Entity",
+					"uid": "1051518337519"
+				},
+				"propertyGroup": {
+					"properties": [
+						{
+							"allowedFileTypes": "",
+							"maxItems": "1",
+							"propertyDescription": "",
+							"propertyIsExcludeField": true,
+							"propertyIsRequired": false,
+							"propertyName": "title",
+							"propertyType": "String",
+							"uid": "1066158805649"
+						},
+						{
+							"allowedFileTypes": "",
+							"maxItems": "1",
+							"propertyDescription": "",
+							"propertyIsExcludeField": true,
+							"propertyIsRequired": false,
+							"propertyName": "user",
+							"propertyType": "Integer",
+							"uid": "665411502755"
+						},
+						{
+							"allowedFileTypes": "",
+							"maxItems": "1",
+							"propertyDescription": "",
+							"propertyIsExcludeField": true,
+							"propertyIsRequired": false,
+							"propertyName": "image",
+							"propertyType": "Image",
+							"uid": "321297847338"
+						}
+					]
+				},
+				"relationGroup": {
+					"relations": []
+				}
+			}
+		}
+	],
+	"properties": {
+		"backendModules": [],
+		"description": "FAL-Code from Helmut Hummel\nInstall fe_login And add feUser\n",
+		"emConf": {
+			"category": "plugin",
+			"custom_category": "",
+			"dependsOn": "typo3 => 7.6.0-7.6.99\n",
+			"disableLocalization": false,
+			"disableVersioning": false,
+			"skipGenerateDocumentationTemplate": false,
+			"sourceLanguage": "en",
+			"state": "alpha",
+			"targetVersion": "7.6.0-7.6.99",
+			"version": ""
+		},
+		"extensionKey": "infochy_feeditexample",
+		"name": "Extbase Example: FeEditing, FeUser-Access And FAL ",
+		"originalExtensionKey": "infochy_feuserexample",
+		"originalVendorName": "Infochy",
+		"persons": [
+			{
+				"company": "http:\/\/php-blogger.infochy.de\/",
+				"email": "",
+				"name": "Micha Barthel",
+				"role": "Developer"
+			}
+		],
+		"plugins": [
+			{
+				"actions": {
+					"controllerActionCombinations": "",
+					"noncacheableActions": "",
+					"switchableActions": ""
+				},
+				"key": "pluginmydata",
+				"name": "Extbase Example: FeEditing, FeUser-Access And FAL "
+			}
+		],
+		"vendorName": "Infochy"
+	},
+	"wires": [],
+	"log": {
+		"last_modified": "2016-11-10 11:58",
+		"extension_builder_version": "7.6.0",
+		"be_user": " (15)"
+	}
+}

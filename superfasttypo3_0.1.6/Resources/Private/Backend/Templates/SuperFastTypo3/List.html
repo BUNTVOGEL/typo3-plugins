@@ -1,0 +1,87 @@
+<f:layout name="Default"/>
+
+
+<f:section name="content">
+	<f:if condition="{compressionLevel}>0">
+		<span style="color:red;">Index.php File can only work with: ['FE']['compressionLevel']=0</span>
+	</f:if>
+	<h1>SuperFastTypo3 - Plugin Manager</h1>
+
+
+	<f:if condition="{notInstalled}">
+		<f:then>
+			<h1 class="label-alpha">
+				<f:link.action action="install">Install SuperFastTypo3</f:link.action>
+			</h1>
+		</f:then>
+		<f:else>
+			<f:if condition="{activatedSFT}">
+				<f:then>
+					<span class="label label-stable"><f:link.action action="deactivate">deactivate SuperFastTypo3</f:link.action></span>
+				</f:then>
+				<f:else>
+					<span class="label label-beta"><f:link.action action="activate">activate SuperFastTypo3</f:link.action></span>
+				</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+
+	<br><br>
+
+	<div class="table-fit">
+		<table id="typo3-extension-list" class="table table-striped table-hover typo3-extension-list">
+			<tr>
+				<th>Plugin</th>
+				<th>Marker-Array</th>
+				<th>
+					<f:translate key="tx_superfasttypo3_domain_model_superfasttypo3.version"/>
+				</th>
+				<th>Status</th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+
+			<f:for each="{superFastTypo3s}" as="superFastTypo3">
+				<tr>
+					<td>
+						<f:link.action action="show" arguments="{superFastTypo3 : superFastTypo3}"> {superFastTypo3.title}
+						</f:link.action>
+					</td>
+					<td>
+						<f:link.action action="show" arguments="{superFastTypo3 : superFastTypo3}">
+							###superfasttypo3.{superFastTypo3.title}.xxx###
+						</f:link.action>
+					</td>
+					<td>
+						<f:link.action action="show" arguments="{superFastTypo3 : superFastTypo3}"> {superFastTypo3.version}
+						</f:link.action>
+					</td>
+					<td>
+						<f:link.action action="status" arguments="{superFastTypo3 : superFastTypo3}">
+							<f:if condition="{superFastTypo3.status}=='activ'">
+								<f:then>
+									<span class="label label-stable">{superFastTypo3.status}</span>
+								</f:then>
+								<f:else>
+									<span class="label label-beta">{superFastTypo3.status}</span>
+								</f:else>
+							</f:if>
+
+						</f:link.action>
+					</td>
+					<td>
+						<f:link.action action="edit" arguments="{superFastTypo3 : superFastTypo3}">Edit</f:link.action>
+					</td>
+					<td>
+						<f:link.action action="delete" arguments="{superFastTypo3 : superFastTypo3}">Remove</f:link.action>
+					</td>
+					<td>
+						<f:link.action action="zip" arguments="{superFastTypo3 : superFastTypo3}">Zip</f:link.action>
+					</td>
+				</tr>
+			</f:for>
+		</table>
+	</div>
+
+</f:section>

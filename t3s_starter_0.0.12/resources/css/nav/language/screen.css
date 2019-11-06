@@ -1,0 +1,17 @@
+
+.nav-language ul{
+  display:inline;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  font: normal 1.0em Arial,Helvetica,Verdana;
+}
+.nav-language li a{
+   font: bold 1.0em Arial,Helvetica,Verdana;
+}
+.nav-language ul li {
+ display:inline;
+}
+.nav-language span.info{
+  padding-right: 3px;
+}

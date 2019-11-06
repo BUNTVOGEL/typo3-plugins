@@ -1,0 +1,1182 @@
+
+##########################################################################################
+#### config: configlibrary/ts/config/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/config/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+config{
+	doctype =  {$config.doctype}
+	xmlprologue =  {$config.xmlprologue}
+	no_cache = {$config.no_cache}
+	disableImgBorderAttr =  {$config.disableImgBorderAttr}
+	index_enable =  {$config.index_enable}
+	baseURL = {$config.baseURL}
+	absRefPrefix = {$config.absRefPrefix}
+  spamProtectEmailAddresses =  {$config.spamProtectEmailAddresses}
+  spamProtectEmailAddresses_atSubst =  {$config.spamProtectEmailAddresses_atSubst}
+  disablePrefixComment =  {$config.disablePrefixComment}
+  extTarget =  {$config.extTarget}
+  linkVars = {$config.linkVars}
+  pageTitleFirst = {$config.pageTitleFirst}
+  xhtml_cleaning =  {$config.xhtml_cleaning}
+  doctypeSwitch = {$config.doctypeSwitch}
+  removeDefaultJS =  {$config.removeDefaultJS}
+  inlineStyle2TempFile =  {$config.inlineStyle2TempFile}
+  disablePrefixComment =  {$config.disablePrefixComment}
+  notification_email_urlmode =  {$config.notification_email_urlmode}
+  tx_realurl_enable =  {$config.tx_realurl_enable}
+  simulateStaticDocuments_pEnc_onlyP = {$config.simulateStaticDocuments_pEnc_onlyP}
+  sys_language_content =  {$config.sys_language_content}
+  sys_language_contentOL =  {$config.sys_language_contentOL}
+  simulateStaticDocuments =  {$config.simulateStaticDocuments}
+}
+
+## config: config. language 0
+## path: config -> EXT:t3s_starter/typo3config/TS/config
+config{
+  sys_language_uid = 0
+  language = {$config.language00}
+  locale_all = {$config.locale_all00}
+  htmlTag_langKey = {$config.htmlTag_langKey00}
+  sys_language_mode = {$config.sys_language_mode00}
+}
+
+## config: config. language 1
+## path: config -> EXT:t3s_starter/configuration/TS/config
+[globalVar = GP:L = 1]
+config{
+  sys_language_uid = 1
+  language = {$config.language01}
+  locale_all = {$config.locale_all01}
+  htmlTag_langKey = {$config.htmlTag_langKey01}
+  sys_language_mode = {$config.sys_language_mode01}
+}
+[global]
+
+## config: config. language 2
+## path: config -> EXT:t3s_starter/configuration/TS/config
+[globalVar = GP:L = 2]
+config{
+  sys_language_uid = 2
+  language = {$config.language02}
+  locale_all =  {$config.locale_all02}
+  htmlTag_langKey = {$config.htmlTag_langKey02}
+  sys_language_mode = {$config.sys_language_mode02}
+}
+[global]
+
+## config: config. language 3
+## path: config -> EXT:t3s_starter/configuration/TS/config
+[globalVar = GP:L = 3]
+config{
+  sys_language_uid = 3
+  language = {$config.language03}
+  locale_all =  {$config.locale_all03}
+  htmlTag_langKey = {$config.htmlTag_langKey03}
+  sys_language_mode = {$config.sys_language_mode03}
+}
+[global]
+
+##########################################################################################
+#### config: configlibrary/ts/plugin/rlmp_tmplselector/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/plugin/rlmp_tmplselector/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+plugin.tx_rlmptmplselector_pi1 {
+  templatePathMain = {$t3s_starterEXTKEY}{$plugin.tx_rlmptmplselector_pi1.templatePathMain}
+  templatePathSub = {$t3s_starterEXTKEY}{$plugin.tx_rlmptmplselector_pi1.templatePathSub}
+  defaultTemplateFileNameMain = {$plugin.tx_rlmptmplselector_pi1.defaultTemplateFileNameMain}
+  defaultTemplateFileNameSub = {$plugin.tx_rlmptmplselector_pi1.defaultTemplateFileNameSub}
+}
+
+##########################################################################################
+#### config: configlibrary/ts/plugin/automaketemplate/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/plugin/automaketemplate/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+plugin.tx_automaketemplate_pi1 {
+  content < {$plugin.tx_automaketemplate_pi1.content}
+  elements {
+    BODY.all = 1
+    BODY.all.subpartMarker = {$plugin.tx_automaketemplate_pi1.elements.BODY.all.subpartMarker}
+    HEAD.all = 1
+    HEAD.all.subpartMarker = {$plugin.tx_automaketemplate_pi1.elements.HEAD.all.subpartMarker}
+    HEAD.rmTagSections = {$plugin.tx_automaketemplate_pi1.elements.HEAD.rmTagSections}
+    DIV.all = 1
+  }
+  relPathPrefix = {$t3s_starterEXTKEY}{$plugin.tx_automaketemplate_pi1.relPathPrefix}
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/plugin/sb_languageswitcher/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/plugin/sb_languageswitcher/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+includeLibs.tx_div = EXT:div/class.tx_div.php
+includeLibs.tx_sblanguageswitcher_controllers_languageSwitch = EXT:sb_languageswitcher/controllers/class.tx_sblanguageswitcher_controllers_languageSwitch.php
+plugin.tx_sblanguageswitcher_pi1.configuration{
+  validate{
+	  notInBuildArray = L,id
+	  parseStringLimit = 100
+  }
+  languages{
+      showOnlyPassivLink = 1
+      pidExcludeList =
+      contentFallBackUid =
+      disableAktivLink = 1
+      wrapAll = <ul class="nav-language">|</ul>
+      values{
+        1{
+	        label = Englisch
+	        wrap = <li><span class="info">Sprachauswahl:</span> |</li>
+        }
+        0{
+           label = Deutsch
+           wrap = <li><span class="info">Sprachauswahl:</span> |</li>
+        }
+      }
+  }
+}
+
+[globalVar = GP:L = 1]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      values{
+        0{
+           label = German
+           wrap = <li><span class="info">Choose language:</span> |</li>
+        }
+        1{
+	         label = English
+	         wrap = <li><span class="info">Choose language:</span> |</li>
+        }
+      }
+  }
+[global]
+plugin.tx_sblanguageswitcher.switchControllers < plugin.tx_sblanguageswitcher_pi1.configuration
+plugin.tx_sblanguageswitcher.switchControllers = USER_INT
+plugin.tx_sblanguageswitcher.switchControllers{
+		userFunc = tx_sblanguageswitcher_controllers_languageSwitch->main
+		action = languageSwitch
+		templatePath = EXT:sb_languageswitcher/templates
+		template = languageSwitch
+		setupPath = plugin.tx_sblanguageswitcher_pi1.configuration.
+}
+
+##########################################################################################
+#### config: configlibrary/ts/plugin/rtehtmlarea/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/plugin/rtehtmlarea/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+##########################################################################################
+#### config: configlibrary/ts/nav/language/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/nav/language/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navLanguage = COA
+lib.navLanguage{
+
+
+}
+
+##########################################################################################
+#### config: configlibrary/ts/nav/breadcrumb/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/nav/breadcrumb/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navBreadcrumb = COA
+lib.navBreadcrumb {
+   10 = TEXT
+   10.value = <div {$lib.navBreadcrumb.wrapCssClass}>
+   20 = TEXT
+   20.value = {$lib.navBreadcrumb.youAreHere}
+   30 = HMENU
+   30 {
+      special = rootline
+      special{
+        range = {$lib.navBreadcrump.range}
+      }
+      1 = TMENU
+      1 {
+         noBlur = 1
+         target = {$lib.navBreadcrumb.target}
+         wrap = <ul>|
+         NO {
+            linkWrap = <li>|{$lib.navBreadcrumb.gt}</li> |*|
+         }
+         CUR = 1
+         CUR {
+           doNotLinkIt = 1
+           stdWrap.data = !!CLEAR CURRENT PAGE!!
+         }
+      }
+   }
+  40 = TEXT
+  40{
+     data = TSFE:page|title
+     wrap =  <li {$lib.navBreadcrumb.cssClassCurrent}>|</li>
+  }
+  50 = TEXT
+  50.value = </ul></div>
+}
+[globalVar = GP:L = 1]
+lib.navBreadcrumb.20.value = {$lib.navBreadcrumb.youAreHereEn}
+[global]
+
+##########################################################################################
+#### config: configlibrary/ts/nav/special/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/nav/special/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navSpecial = COA
+lib.navSpecial {
+   20 = TEXT
+   20.value = {$lib.navSpecial.beforeText}
+   30 = HMENU
+   30 {
+      special= list
+      special.value = {$lib.navSpecial.specialListPid}
+      1 = TMENU
+      1 {
+         noBlur = 1
+	       expAll = 0
+         wrap = <ul>|</ul>
+         NO = 1
+         NO {
+            allWrap = <li>|</li>
+         }
+         CUR < .NO
+         CUR {
+            doNotLinkIt = 1
+            allWrap = <li>|</li>
+         }
+      }
+   }
+   40 = TEXT
+   40.value = {$lib.navSpecial.afterText}
+}
+
+##########################################################################################
+#### config: configlibrary/ts/nav/sidemap/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/nav/sidemap/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navSidemap = HMENU
+lib.navSidemap {
+   wrap = <div {$lib.navSidemap.wrapCssClass}>|</div>
+   entryLevel = {$lib.navSidemap.entryLevel}
+   1 = TMENU
+   1 {
+      expAll = 1
+      wrap = <ul>|</ul>
+      NO = 1
+      NO {
+         allWrap = <li {$lib.navSidemap.NOCssClass}>|</li>
+      }
+      IFSUB = 1
+      IFSUB {
+         wrapItemAndSub = <li {$lib.navSidemap.IFSUBCssClass}>|</li>
+      }
+      ACT = 1
+      ACT {
+         wrapItemAndSub = <li {$lib.navSidemap.ACTCssClass}>|</li>
+      }
+      CUR = 1
+      CUR {
+         doNotLinkIt = 1
+         allWrap = <li {$lib.navSidemap.CURCssClass}>|</li>
+      }
+      CURIFSUB = 1
+      CURIFSUB {
+         doNotLinkIt = 1
+         wrapItemAndSub = <li {$lib.navSidemap.CURIFSUBCssClass}>|</li>
+      }
+   }
+   {$lib.navSidemap.navSubSecondLevel}
+   {$lib.navSidemap.navSubThirdLevel}
+}
+
+##########################################################################################
+#### config: configlibrary/ts/nav/root/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/nav/root/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navRoot = HMENU
+lib.navRoot {
+  wrap = <div {$lib.navRoot.wrapCssClass}>|</div>
+  entryLevel = 0
+  excludeUidList = {$lib.navRoot.excludeUidList}
+  1 = TMENU
+  1 {
+    noBlur = 1
+    wrap = <ul>|</ul>
+    NO = 1
+    NO{
+      ATagTitle.field = abstract // description // subtitle
+      allWrap = <li>|</li>
+      linkWrap = |
+      ATagBeforeWrap = 1
+      stdWrap.htmlSpecialChars = 1
+    }
+    ACT = 1
+    ACT < .NO
+    ACT.allWrap = <li class="{$lib.navRoot.cssCurrent}">|</li>
+  }
+}
+
+##########################################################################################
+#### config: configlibrary/ts/nav/sub/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/nav/sub/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.navSub = HMENU
+lib.navSub {
+   wrap = <div {$lib.navSub.wrapCssClass}>|</div>
+   entryLevel = {$lib.navSub.entryLevel}
+   1 = TMENU
+   1 {
+      expAll = 1
+      wrap = <ul>|</ul>
+      NO = 1
+      NO {
+         allWrap = <li {$lib.navSub.NOCssClass}>|</li>
+      }
+      IFSUB = 1
+      IFSUB {
+         wrapItemAndSub = <li {$lib.navSub.IFSUBCssClass}>|</li>
+      }
+      ACT = 1
+      ACT {
+         wrapItemAndSub = <li {$lib.navSub.ACTCssClass}>|</li>
+      }
+      CUR = 1
+      CUR {
+         doNotLinkIt = 1
+         allWrap = <li {$lib.navSub.CURCssClass}>|</li>
+      }
+      CURIFSUB = 1
+      CURIFSUB {
+         doNotLinkIt = 1
+         wrapItemAndSub = <li {$lib.navSub.CURIFSUBCssClass}>|</li>
+      }
+   }
+   {$lib.navSub.navSubSecondLevel}
+   {$lib.navSub.navSubThirdLevel}
+}
+
+##########################################################################################
+#### config: configlibrary/ts/template/footer/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/template/footer/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: barthel@sunbeam-berlin.de
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+
+lib.templateFooter = COA
+lib.templateFooter{
+
+
+
+}
+
+
+
+##########################################################################################
+#### config: configlibrary/ts/template/header/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/template/header/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: barthel@sunbeam-berlin.de
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+
+lib.templateHeader = COA
+lib.templateHeader{
+   20 < lib.navRoot
+   30 = TEXT
+   30.value = <div class="headerlogo"></div>
+}
+
+##########################################################################################
+#### config: configlibrary/ts/template/content/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/template/content/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: barthel@sunbeam-berlin.de
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.templateContent = TEMPLATE
+lib.templateContent{
+   template =< plugin.tx_automaketemplate_pi1
+    template.content.templateType = sub
+    workOnSubpart = DOCUMENT_BODY
+    subparts{
+      box3m1 < styles.content.get
+      box3l2 < lib.navSub
+      box3m2 < styles.content.get
+      box3l3 < lib.navSub
+      box3m3 < styles.content.get
+      box3r3 < styles.content.getRight
+    }
+}
+
+##########################################################################################
+#### config: configlibrary/ts/template/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/template/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: infoa@t3s_starterugar.info
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+lib.template = COA
+lib.template{
+    20 = TEMPLATE
+    20{
+      template =< {$lib.template.template}
+      template.content.templateType = main
+      workOnSubpart = {$lib.template.workOnSubpart}
+      subparts{
+         box1 < {$lib.template.subparts.box1}
+         box2m < {$lib.template.subparts.box2}
+         box2l < plugin.tx_sblanguageswitcher.switchControllers
+         box3 < {$lib.template.subparts.box3}
+         box4 < {$lib.template.subparts.box4}
+      }
+    }
+}
+##########################################################################################
+#### config: configlibrary/ts/libcss/headerlogo/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/libcss/headerlogo/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.libcssHeaderlogo = COA
+lib.libcssHeaderlogo{
+    50 = TEXT
+    50 {
+        data = levelmedia:-1,slide
+        listNum = 1
+        wrap = {$lib.libcssHeaderlogo.wrap}
+    }
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/libcss/headerimage/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/libcss/headerimage/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.libcssHeaderimage = COA
+lib.libcssHeaderimage{
+    50 = TEXT
+    50 {
+        data = levelmedia:-1,slide
+        listNum = 0
+        wrap = {$lib.libcssHeaderimage.wrap}
+    }
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/screen/template/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/css/screen/template/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageCssScreenTemplate = COA
+lib.pageCssScreenTemplate{
+   10 = FILE
+   10.file = {$t3s_starterEXTKEY}{$lib.pageCssScreenTemplate.10.file}
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/css/screen/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/css/screen/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageCssScreen = PAGE
+pageCssScreen{
+  typeNum = {$pageCssScreen.typeNum}
+  config{
+      additionalHeaders = Content-type: text/css
+      disableAllHeaderCode = 1
+  }
+  20 <  {$pageCssScreen.20}
+  40 <  {$pageCssScreen.40}
+  50 <  {$pageCssScreen.50}
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/include/libs/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/html/include/libs/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.libPageHtmlIncludeLibs{
+
+
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/include/css/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/html/include/css/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlIncludeCss{
+    default = {$lib.pageHtmlIncludeCss.defaultFile}
+    default {
+      media = screen
+      title = standard style
+    }
+    alternate = {$lib.pageHtmlIncludeCss.alternateFile}
+    alternate {
+      media = screen
+      title = alternate style
+      alternate = 1
+    }
+    print = {$lib.pageHtmlIncludeCss.printFile}
+    print {
+      media = print
+      title = print style
+    }
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/include/js/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/html/include/js/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlIncludeJs{
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/header/iehack/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/html/header/iehack/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: 
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/header/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/html/header/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact: barthel@sunbeam-berlin.de
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlHeader = COA
+lib.pageHtmlHeader{
+   20 = TEXT
+   20.dataWrap =  <link rel="stylesheet" type="text/css" href="index.php?id={field:uid}&amp;type=20" />|
+}
+
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/meta/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/html/meta/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlMeta{
+  description = {$lib.pageHtmlMeta.description}
+  keywords =  {$lib.pageHtmlMeta.keywords}
+  author =  {$lib.pageHtmlMeta.author}
+  robots =  {$lib.pageHtmlMeta.robots}
+  MSSmartTagsPreventParsing =  {$lib.pageHtmlMeta.MSSmartTagsPreventParsing}
+  imagetoolbar  =  {$lib.pageHtmlMeta.imagetoolbar}
+}
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/config/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/html/config/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlConfig{
+  admPanel = {$lib.pageHtmlConfig.admPanel}
+  cache = {$lib.pageHtmlConfig.cache}
+  no_cache = {$lib.pageHtmlConfig.no_cache}
+  doctype ={$lib.pageHtmlConfig.doctype}
+  xhtml_cleaning = {$lib.pageHtmlConfig.xhtml_cleaning}
+  xmlprologue = {$lib.pageHtmlConfig.xmlprologue}
+  htmlTag_langKey = {$lib.pageHtmlConfig.htmlTag_langKey}
+  index_enable = {$lib.pageHtmlConfig.index_enable}
+  metaCharset = {$lib.pageHtmlConfig.metaCharset}
+  additionalHeaders = {$lib.pageHtmlConfig.additionalHeaders}
+  inlineStyle2TempFile = {$lib.pageHtmlConfig.inlineStyle2TempFile}
+  disablePrefixComment = {$lib.pageHtmlConfig.disablePrefixComment}
+  removeDefaultJS = {$lib.pageHtmlConfig.removeDefaultJS}
+  cache_clearAtMidnight = {$lib.pageHtmlConfig.cache_clearAtMidnight}
+  spamProtectEmailAddresses = {$lib.pageHtmlConfig.spamProtectEmailAddresses}
+  headerComment = {$lib.pageHtmlConfig.headerComment}
+  simulateStaticDocuments = {$lib.pageHtmlConfig.simulateStaticDocuments}
+  simulateStaticDocuments_pEnc = {$lib.pageHtmlConfig.simulateStaticDocuments_pEnc}
+  simulateStaticDocuments_addTitle = {$lib.pageHtmlConfig.simulateStaticDocuments_addTitle}
+}
+
+
+##########################################################################################
+#### config: configlibrary/ts/page/html/
+#### path: /opt/lampp/htdocs/typo3/typo3/t3s/typo3conf/ext/t3s_starter/configlibrary/ts/page/html/setup.txt
+##########################################################################################
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageHtml = PAGE
+pageHtml{
+  typeNum = {$pageHtml.typeNum}
+  admPanelStyles = {$pageHtml.admPanelStyles}
+  shortcutIcon = {$t3s_starterEXTKEY}{$pageHtml.shortcutIcon}
+  config < {$pageHtml.config}
+  includeLibs < {$pageHtml.includeLibs}
+  includeCSS < {$pageHtml.includeCSS}
+  includeJS < {$pageHtml.includeJS}
+  meta < {$pageHtml.meta}
+  headerData < {$pageHtml.headerData}
+  20 <  {$pageHtml.20}
+}

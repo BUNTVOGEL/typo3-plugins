@@ -1,0 +1,11 @@
+/* reset all Body elements */
+body, #bodyout, #bodyin { margin:0; padding: 0; border: 0;}
+
+.bodybox{
+  display: none;
+}
+.bodybox{
+  text-align: left;
+}
+
+

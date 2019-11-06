@@ -1,0 +1,125 @@
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/charset/t3print.css
+##########################################################
+*/
+@charset "UTF-8";
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/body/t3print.css
+##########################################################
+*/
+/* reset all Body elements */
+body, .bodyout, .bodyin { margin:0; padding: 0; border: 0;}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/padding/t3print.css
+##########################################################
+*/
+.padding-topbottom, .padding-leftright, .padding-yes {
+	padding: 0;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/boxes/t3print.css
+##########################################################
+*/
+#b1, #b2, #b3, #b5{
+  display: none;
+}
+#b4{
+  text-align: left;
+}
+
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/table/t3print.css
+##########################################################
+*/
+table td, table th {
+	border: 2px solid #ccc;
+}
+table caption {
+	margin:0em;
+}
+table { display: block important! } 
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/float/t3print.css
+##########################################################
+*/
+.float-left, .float-right, .float-middle, .float-box { float:none; width: 100%; margin: 0; padding: 0; border: 0; }
+.float-box {page-break-after:always}
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/typography/t3print.css
+##########################################################
+*/
+body * {font-family: "Times New Roman", Times, serif}
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/headings/t3print.css
+##########################################################
+*/
+h1, h2, h3, h4, h5, h6 { page-break-after:avoid; }
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/color/t3print.css
+##########################################################
+*/
+#b2, #b3, #b4, #b5{
+ border: 0;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/redges/t3print.css
+##########################################################
+*/
+.redges-1, .redges-2, .redges-3, .redges-4 {display:none;}
+.redges-in, .redges-out{display:inline; border:0; padding:0; margin:0;}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/menu/line/t3print.css
+##########################################################
+*/
+.menu-line {
+   display: none;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/menu/list/t3print.css
+##########################################################
+*/
+.menu-list {
+   display: none;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/print/t3print.css
+##########################################################
+*/
+#printheader, #printfooter{
+	 display: block;
+	 text-align: left;
+	 padding: 3px 0;
+	 margin: 3px 0;
+	 border-bottom: 2px solid #ccc;
+	 border-top: 2px solid #ccc;
+	 font-weight: bold;
+}
+.print{
+	display: block;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/a/t3print.css
+##########################################################
+*/
+/* CSS3 firefox, opera, ie7? */
+a[href]:after{
+   content: " [URL: "attr(href)" ] ";
+}
+a  { text-decoration: none; color: #000; font-family: serif; font-weight: bold;}

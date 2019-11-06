@@ -1,0 +1,18 @@
+<f:render section="categoryList" arguments="{categoryTreeArray: categoryTreeArray}" />
+
+
+<f:section name="categoryList">
+	<ul>
+		<f:for each="{categoryTreeArray}" as="category">
+			<li>
+				{category.title}
+				<f:if condition="{category.subCategories}">
+					<f:render section="categoryList" arguments="{categoryTreeArray: category.subCategories}" />
+				</f:if>
+			</li>
+		</f:for>
+	</ul>
+</f:section>
+
+
+

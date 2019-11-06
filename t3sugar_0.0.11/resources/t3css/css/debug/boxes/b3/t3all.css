@@ -1,0 +1,16 @@
+#b3b1{
+	background-image: url(typo3conf/ext/t3sugar/resources/t3css/image/debug/b3b1.png) !important;
+	background-repeat:repeat;
+}
+#b3b2{
+	background-image: url(typo3conf/ext/t3sugar/resources/t3css/image/debug/b3b2.png) !important;
+	background-repeat:repeat;
+}
+#b3b3{
+	background-image: url(typo3conf/ext/t3sugar/resources/t3css/image/debug/b3b3.png) !important;
+	background-repeat:repeat;
+}
+body{
+	background-image: url(typo3conf/ext/t3sugar/resources/t3css/image/debug/debug.gif) !important;
+    background-position: top left;
+}

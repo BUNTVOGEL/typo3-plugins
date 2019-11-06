@@ -1,0 +1,20 @@
+.menu-list .current,
+.menu-list li a{
+  padding: 0.5em 0.8em 0.5em 0.8em;
+}
+
+.menu-list .current,
+.menu-list li a:hover {
+  background-color: #ccc;
+  color: #ffffff;
+}
+.menu-list .current,
+.menu-list li a,
+.menu-list .current{
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1em;
+}
+.menu-list li a {
+  color: #000;
+}

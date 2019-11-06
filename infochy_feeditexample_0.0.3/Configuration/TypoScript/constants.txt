@@ -1,0 +1,15 @@
+
+plugin.tx_infochyfeeditexample_pluginmydata {
+	view {
+		# cat=plugin.tx_infochyfeeditexample_pluginmydata/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:infochy_feeditexample/Resources/Private/Templates/
+		# cat=plugin.tx_infochyfeeditexample_pluginmydata/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:infochy_feeditexample/Resources/Private/Partials/
+		# cat=plugin.tx_infochyfeeditexample_pluginmydata/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:infochy_feeditexample/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_infochyfeeditexample_pluginmydata//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

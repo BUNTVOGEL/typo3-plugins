@@ -1,0 +1,12 @@
+
+ # Module configuration
+module.tx_superfasttypo3_tools_superfasttypo3superfasttypo3 {
+	persistence {
+		storagePid = {$module.tx_superfasttypo3_superfasttypo3.persistence.storagePid}
+	}
+	view {
+		templateRootPaths.0 = {$module.tx_superfasttypo3_superfasttypo3.view.templateRootPath}
+		partialRootPaths.0 = {$module.tx_superfasttypo3_superfasttypo3.view.partialRootPath}
+		layoutRootPaths.0 = {$module.tx_superfasttypo3_superfasttypo3.view.layoutRootPath}
+	}
+}

@@ -1,0 +1,14 @@
+
+.nav-breadcrumb ul{
+  display:inline;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  font: normal 1.0em Arial,Helvetica,Verdana;
+}
+.nav-breadcrumb ul li {
+ display:inline;
+}
+.nav-breadcrumb span.info{
+  padding-right: 3px;
+}

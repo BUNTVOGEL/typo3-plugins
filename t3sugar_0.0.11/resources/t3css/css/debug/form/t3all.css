@@ -1,0 +1,15 @@
+fieldset, form{
+  border: 1px solid red;
+}
+form{
+  border: 1px solid red;
+  background-image: url(typo3conf/ext/t3sugar/resources/t3css/image/debug/bodyout.png) !important;
+  background-repeat:repeat;
+}
+input, textarea, select, label{
+   border: 1px solid red;
+}
+body{
+	background-image: url(typo3conf/ext/t3sugar/resources/t3css/image/debug/debug.gif) !important;
+    background-position: top left;
+}

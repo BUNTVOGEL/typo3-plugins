@@ -1,0 +1,30 @@
+table {
+	 border-collapse:collapse;
+	 empty-cells:show;
+	 font-size:0.8em;
+	 width:100%;
+	 background: #d9d959;
+}
+table caption {
+	text-align:left;
+	font-weight:bold;
+	color:#000;
+	margin:0.2em;
+}
+table th, table thead td{
+	color:white;
+	padding:3px 5px;
+	height:2em;
+	background:#575783;
+}
+table td {
+	height:2em;
+	padding:3px 5px;
+	text-align:left;
+	font-weight:normal;
+}
+table td, table th {
+	border:solid 2px #fff;
+}
+table tr.odd {background: #baba4d;}
+table tr.even {background: #d9d959;}

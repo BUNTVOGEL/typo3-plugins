@@ -1,0 +1,5 @@
+/* IE Doubled Float-Margin Bug @see http://positioniseverything.net/explorer/doubled-margin.html */
+* html .floatbox-before { display: inline }
+* html .floatbox-after { display: inline }
+/* Expanding Box Problem @see http://www.positioniseverything.net/explorer/expandingboxbug.html */
+* html .floatbox { word-wrap: break-word; }

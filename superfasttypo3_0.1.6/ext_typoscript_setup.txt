@@ -1,0 +1,10 @@
+module.tx_superfasttypo3_tools_superfasttypo3superfasttypo3 {
+	persistence {
+		storagePid = 0
+	}
+	view {
+		templateRootPaths.0 = EXT:superfasttypo3/Resources/Private/Backend/Templates/
+		partialRootPaths.0 = EXT:superfasttypo3/Resources/Private/Backend/Partials/
+		layoutRootPaths.0 = EXT:superfasttypo3/Resources/Private/Backend/Layouts/
+	}
+}

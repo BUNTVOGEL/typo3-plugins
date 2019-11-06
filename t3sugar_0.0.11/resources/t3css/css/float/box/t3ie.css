@@ -1,0 +1,12 @@
+/* The IE Doubled Float-Margin Bug AND 3 Pixel-Bug
+  @see http://positioniseverything.net/explorer/doubled-margin.html
+*/
+.floatbox {	display: inline-block; }
+/* clear float @see http://www.positioniseverything.net/explorer/peekaboo.html */
+* html .floatbox { height: 1%; }
+.floatbox-after{ position:relative; }
+
+/* 3 Pixel-Bug */
+* html .floatbox-middle { margin-right: -3px; }
+* html .floatbox-after { margin-left: -3px; }
+* html .floatbox-before{ margin: 0 24%; }

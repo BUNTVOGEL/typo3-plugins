@@ -1,0 +1,28 @@
+
+.nav-sub{
+  clear: both;
+  display: inline;
+}
+.nav-sub ul {
+  margin:0pt;
+  padding:0pt;
+}
+.nav-sub .nav-sub-cur{
+	padding: 3px 3px 3px 10px;
+  background-color: #66A552;
+  border-left: 3px solid  #DDDDDD;
+  color: #ffffff;
+  border-bottom: 1px solid #DDDDDD;
+}
+.nav-sub li a {
+  display: block;
+	padding: 3px 3px 3px 10px;
+  	border-left: 3px solid  #DDDDDD;
+	text-decoration:none;
+border-bottom: 1px solid #DDDDDD;
+}
+.nav-sub li a:hover {
+  background-color: #FF9F33;
+  color: #ffffff;
+	text-decoration:none;
+}

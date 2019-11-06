@@ -1,0 +1,13 @@
+
+plugin.tx_infochyhelper_pluginmydatahelper {
+	view {
+		templateRootPaths.0 = {$plugin.tx_infochyhelper_pluginmydatahelper.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_infochyhelper_pluginmydatahelper.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_infochyhelper_pluginmydatahelper.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_infochyhelper_pluginmydatahelper.persistence.storagePid}
+	}
+}
+
+

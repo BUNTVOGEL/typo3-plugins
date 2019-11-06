@@ -1,0 +1,6 @@
+/* get vertical scrollbars Firefox,Netscape,Safari
+  @see http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better
+  Horizontal Scrollbar bug
+  @see http://www.torn.be/kazza/tutz/xhtml/4/xhtml_hor_scrlbar_results_en.html
+*/
+html { height: 100%; margin-bottom: 1px;}

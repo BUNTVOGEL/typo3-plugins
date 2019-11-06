@@ -1,0 +1,36 @@
+<tr>
+	<td>
+		<f:if condition="{myData.hidden}">
+			<f:then>
+				TRUE:
+
+			</f:then>
+			<f:else>
+				FALSE:
+				show on Public-List
+			</f:else>
+		</f:if>
+	</td>
+	<td>
+		<f:link.action action="show" arguments="{myData : myData}"> {myData.title}</f:link.action>
+	</td>
+	<td>
+		<f:link.action action="show" arguments="{myData : myData}">
+			<f:if condition="{myData.image}">
+				<f:image image="{myData.image}" alt="" width="200"/>
+			</f:if>
+		</f:link.action>
+	</td>
+	<td>
+		<f:link.action action="edit" arguments="{myData : myData}">E</f:link.action>
+	</td>
+	<td>
+		<f:link.action action="delete" arguments="{myData : myData}">D</f:link.action>
+	</td>
+	<td>
+		<f:link.action action="enable" arguments="{myData : myData}">e</f:link.action>
+	</td>
+	<td>
+		<f:link.action action="disable" arguments="{myData : myData}">d</f:link.action>
+	</td>
+</tr>

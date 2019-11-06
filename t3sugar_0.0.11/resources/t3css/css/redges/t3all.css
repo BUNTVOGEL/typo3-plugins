@@ -1,0 +1,19 @@
+/* @see http://www.html.it/articoli/nifty/index.html, http://www.spiffycorners.com/ */
+* html .redges-in {height:1%}
+.redges-in, .redges-1, .redges-2, .redges-3, .redges-4 {overflow:hidden}
+.redges-in, .redges-out, .redges-1, .redges-2, .redges-3, .redges-4 {display:block;}
+.redges-out {background:transparent; font-weight:normal; }
+/* border left and right and the padding*/
+.redges-in {border-left:1px solid #ccc; border-right:1px solid #ccc; padding:0.5em 1em;}
+/*building the round edges no-size*/
+.redges-1, .redges-2, .redges-3, .redges-4 {font-size:1px;}
+/*building the round edges*/
+.redges-1, .redges-2, .redges-3 {height:1px;}
+/*building the round edges border-color*/
+.redges-2, .redges-3, .redges-4 { border-left:1px solid #ccc; border-right:1px solid #ccc;}
+/*background for topborder*/
+.redges-1 {margin:0 5px; background:#ccc;}
+.redges-2 {margin:0 3px; border-width:0 2px;}
+.redges-3 {margin:0 2px;}
+.redges-4 {margin:0 1px; height:2px;}
+

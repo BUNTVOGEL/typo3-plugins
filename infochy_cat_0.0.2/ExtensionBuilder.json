@@ -1,0 +1,100 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    131,
+                    79
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
+                    "customActions": []
+                },
+                "name": "Cat",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "214503509477"
+                },
+                "propertyGroup": {
+                    "properties": []
+                },
+                "relationGroup": {
+                    "relations": [
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": false,
+                            "propertyIsExcludeField": true,
+                            "relationDescription": "",
+                            "relationName": "categories",
+                            "relationType": "zeroToMany",
+                            "relationWire": "",
+                            "uid": "86847232888"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "https:\/\/wiki.typo3.org\/TYPO3_6.0#Adding_categories_to_own_models_using_Extension_Builder",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": ""
+        },
+        "extensionKey": "infochy_cat",
+        "name": "Extbase Category Example ",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "infochy",
+                "email": "mb@infochy.de",
+                "name": "Micha Barthel",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "plugin",
+                "name": "Plugin Extbase Category Example "
+            }
+        ],
+        "vendorName": "Infochy"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2017-02-15 01:18",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}

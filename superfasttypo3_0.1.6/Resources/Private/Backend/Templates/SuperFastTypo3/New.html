@@ -1,0 +1,26 @@
+<f:layout name="Default"/>
+
+
+<f:section name="content">
+	<f:link.action action="list">Back to Plugin Manager</f:link.action>
+	<h1>New SuperFastTypo3 Marker-Plugin</h1>
+
+
+	<f:render partial="FormErrors"/>
+
+	<f:form action="create" name="newSuperFastTypo3" object="{newSuperFastTypo3}">
+
+		<label for="title">
+			Template Plugin
+		</label><br/>
+		<f:form.select property="uid" options="{options}"/>
+		<br/>
+		<label for="title">
+			<f:translate key="tx_superfasttypo3_domain_model_superfasttypo3.title"/>
+		</label><br/>
+		<f:form.textfield property="title"/>
+		<br/>
+
+		<f:form.submit value="Create new"/>
+	</f:form>
+</f:section>

@@ -1,0 +1,12 @@
+#bodyin{
+	background-image: url(typo3conf/ext/t3sugar/resources/t3css/image/debug/bodyin.png) !important;
+	background-repeat:repeat;
+}
+#bodyout{
+	background-image: url(typo3conf/ext/t3sugar/resources/t3css/image/debug/bodyout.png) !important;
+	background-repeat:repeat;
+}
+body{
+	background-image: url(typo3conf/ext/t3sugar/resources/t3css/image/debug/body.png) !important;
+	background-repeat:repeat;
+}

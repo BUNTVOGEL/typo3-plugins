@@ -1,0 +1,64 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlConfig{
+  # cat=t3sugar.enable; type=boolean; label=pageHtmlConfig : EXT:t3sugar/typo3config/TS/page/html/config
+  enablepageHtmlConfig = 1
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=admPanel : EXT:t3sugar/typo3config/TS/page/html/config
+  admPanel = 0
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=cache : EXT:t3sugar/typo3config/TS/page/html/config
+  cache = 1
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=no_cache : EXT:t3sugar/typo3config/TS/page/html/config
+  no_cache = 1
+  # cat=t3sugar.pageHtmlConfig; type=string; label=doctype : EXT:t3sugar/typo3config/TS/page/html/config
+  doctype = xhtml_trans
+  # cat=t3sugar.pageHtmlConfig; type=string; label=xhtml_cleaning : EXT:t3sugar/typo3config/TS/page/html/config
+  xhtml_cleaning = all
+  # cat=t3sugar.pageHtmlConfig; type=string; label=xmlprologue : EXT:t3sugar/typo3config/TS/page/html/config
+  xmlprologue = none
+  # cat=t3sugar.pageHtmlConfig; type=string; label=htmlTag_langKey : EXT:t3sugar/typo3config/TS/page/html/config
+  htmlTag_langKey = en
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=index_enable : EXT:t3sugar/typo3config/TS/page/html/config
+  index_enable = 1
+  # cat=t3sugar.pageHtmlConfig; type=string; label=metaCharset : EXT:t3sugar/typo3config/TS/page/html/config
+  metaCharset = utf-8
+  # cat=t3sugar.pageHtmlConfig; type=string; label=additionalHeaders : EXT:t3sugar/typo3config/TS/page/html/config
+  additionalHeaders = Content-Type:text/html;charset=utf-8
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=inlineStyle2TempFile : EXT:t3sugar/typo3config/TS/page/html/config
+  inlineStyle2TempFile = 1
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=disablePrefixComment : EXT:t3sugar/typo3config/TS/page/html/config
+  disablePrefixComment = 1
+  # cat=t3sugar.pageHtmlConfig; type=string; label=removeDefaultJS : EXT:t3sugar/typo3config/TS/page/html/config
+  removeDefaultJS = external
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=cache_clearAtMidnight : EXT:t3sugar/typo3config/TS/page/html/config
+  cache_clearAtMidnight = 1
+  # cat=t3sugar.pageHtmlConfig; type=string; label=spamProtectEmailAddresses : EXT:t3sugar/typo3config/TS/page/html/config
+  spamProtectEmailAddresses = ascii
+  # cat=t3sugar.pageHtmlConfig; type=string; label=headerComment : EXT:t3sugar/typo3config/TS/page/html/config
+  headerComment = T3S Typo3 Sugar
+  # cat=t3sugar.pageHtmlConfig; type=boolean; label=simulateStaticDocuments : EXT:t3sugar/typo3config/TS/page/html/config
+  simulateStaticDocuments = 0
+  # cat=t3sugar.pageHtmlConfig; type=string; label=simulateStaticDocuments_pEnc : EXT:t3sugar/typo3config/TS/page/html/config
+  simulateStaticDocuments_pEnc = md5
+  # cat=t3sugar.pageHtmlConfig; type=string; label=simulateStaticDocuments_addTitle : EXT:t3sugar/typo3config/TS/page/html/config
+  simulateStaticDocuments_addTitle = 30
+}

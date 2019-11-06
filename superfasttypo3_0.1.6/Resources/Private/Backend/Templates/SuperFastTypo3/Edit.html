@@ -1,0 +1,29 @@
+<f:layout name="Default"/>
+
+
+<f:section name="content">
+	<f:link.action action="list">Back to Plugin Manager</f:link.action>
+	<h1>Edit SuperFastTypo3 Marker-Plugin:
+		<f:if condition="{superFastTypo3.status}=='activ'">
+			<f:then>
+				<span class="label label-stable">{superFastTypo3.uid}</span>
+			</f:then>
+			<f:else>
+				<span class="label label-beta">{superFastTypo3.uid}</span>
+			</f:else>
+		</f:if>
+	</h1>
+
+	<f:form action="update" name="superFastTypo3" object="{superFastTypo3}">
+		<f:if condition="{is_writable}">
+			<f:then>
+				<span class="label label-alpha">{is_writable}</span><br>
+			</f:then>
+			<f:else>
+				<f:form.submit value="Save"/>
+				<br>
+			</f:else>
+		</f:if>
+		<f:render partial="SuperFastTypo3/FormFields" arguments="{superFastTypo3:superFastTypo3}"/>
+	</f:form>
+</f:section>

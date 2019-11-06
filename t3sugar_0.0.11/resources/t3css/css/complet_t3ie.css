@@ -1,0 +1,78 @@
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/charset/t3ie.css
+##########################################################
+*/
+@charset "UTF-8";
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/html/t3ie.css
+##########################################################
+*/
+/* get vertical scrollbars Firefox,Netscape,Safari
+  @see http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better
+  Horizontal Scrollbar bug
+  @see http://www.torn.be/kazza/tutz/xhtml/4/xhtml_hor_scrlbar_results_en.html
+*/
+html { height: 100%; margin-bottom: 1px;}
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/body/t3ie.css
+##########################################################
+*/
+/* http://www.brunildo.org/test/ */
+body { position:relative }
+/* hasLayout  @see http://msdn2.microsoft.com/en-us/library/ms531213.aspx */
+body { height: 1% }
+#bodyin, #bodyout {
+  zoom:1; /* IE7 hasLayout */
+  height: 1%;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/float/t3ie.css
+##########################################################
+*/
+/* The IE Doubled Float-Margin Bug @see http://positioniseverything.net/explorer/doubled-margin.html */
+.float-block {	display: inline-block; }
+/* clear float @see http://www.positioniseverything.net/explorer/peekaboo.html
+*/
+* html .float-block { height: 1%; }
+.float-right{ position:relative; }
+
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/clear/t3ie.css
+##########################################################
+*/
+/* The IE Doubled Float-Margin Bug @see http://positioniseverything.net/explorer/doubled-margin.html */
+.clear { display: inline-block }
+
+/* How To Clear Floats Without Structural Markup
+  @see http://www.positioniseverything.net/easyclearing.html
+*/
+.clear { display: block }
+* html .clear { height: 1% }
+.clear-ie {
+    display:block;
+    width: 100%;
+    font-size:0px;
+}
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/list/t3ie.css
+##########################################################
+*/
+/* IE/Win Disappearing List-Background Bug @see http://www.positioniseverything.net/explorer/ie-listbug.html */
+ul, ol, dl {  position: relative;  }
+/*
+##########################################################
+#### path: typo3conf/ext/t3sugar/resources/t3css/css/float/screen/t3ie.css
+##########################################################
+*/
+/* IE Doubled Float-Margin Bug @see http://positioniseverything.net/explorer/doubled-margin.html */
+* html .float-left { display: inline }
+* html .float-right { display: inline }
+/* Expanding Box Problem @see http://www.positioniseverything.net/explorer/expandingboxbug.html */
+* html .float-block { word-wrap: break-word; }

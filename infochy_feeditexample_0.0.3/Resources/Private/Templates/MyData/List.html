@@ -1,0 +1,37 @@
+<f:layout name="Default"/>
+
+
+<f:section name="main">
+
+	<f:link.action action="new">New MyData</f:link.action>
+
+	<h1 style="color:red;">Please SET the Record Storage Page in the Plugin</h1>
+	FeUser: {feUser.username}
+	<h1>Listing for MyData</h1>
+
+	<f:flashMessages/>
+
+	<table class="tx_infochyfeeditexample">
+		<tr>
+			<th>## HiddenRecord</th>
+			<th>
+				<f:translate key="tx_infochyfeeditexample_domain_model_mydata.title"/>
+			</th>
+			<th>
+				<f:translate key="tx_infochyfeeditexample_domain_model_mydata.image"/>
+			</th>
+			<th>## Edit</th>
+			<th>## Delete</th>
+			<th>## Enable->setHidden(FALSE)</th>
+			<th>## Disable->setHidden(TRUE)</th>
+		</tr>
+
+		<f:for each="{myDatas}" as="myData">
+
+			<f:render partial="MyData/List" arguments="{myData:myData}"/>
+
+		</f:for>
+	</table>
+
+
+</f:section>

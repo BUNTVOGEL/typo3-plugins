@@ -1,0 +1,44 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+lib.pageHtmlConfig{
+  admPanel = {$lib.pageHtmlConfig.admPanel}
+  cache = {$lib.pageHtmlConfig.cache}
+  no_cache = {$lib.pageHtmlConfig.no_cache}
+  doctype ={$lib.pageHtmlConfig.doctype}
+  xhtml_cleaning = {$lib.pageHtmlConfig.xhtml_cleaning}
+  xmlprologue = {$lib.pageHtmlConfig.xmlprologue}
+  htmlTag_langKey = {$lib.pageHtmlConfig.htmlTag_langKey}
+  index_enable = {$lib.pageHtmlConfig.index_enable}
+  metaCharset = {$lib.pageHtmlConfig.metaCharset}
+  additionalHeaders = {$lib.pageHtmlConfig.additionalHeaders}
+  inlineStyle2TempFile = {$lib.pageHtmlConfig.inlineStyle2TempFile}
+  disablePrefixComment = {$lib.pageHtmlConfig.disablePrefixComment}
+  removeDefaultJS = {$lib.pageHtmlConfig.removeDefaultJS}
+  cache_clearAtMidnight = {$lib.pageHtmlConfig.cache_clearAtMidnight}
+  spamProtectEmailAddresses = {$lib.pageHtmlConfig.spamProtectEmailAddresses}
+  headerComment = {$lib.pageHtmlConfig.headerComment}
+  simulateStaticDocuments = {$lib.pageHtmlConfig.simulateStaticDocuments}
+  simulateStaticDocuments_pEnc = {$lib.pageHtmlConfig.simulateStaticDocuments_pEnc}
+  simulateStaticDocuments_addTitle = {$lib.pageHtmlConfig.simulateStaticDocuments_addTitle}
+}
+

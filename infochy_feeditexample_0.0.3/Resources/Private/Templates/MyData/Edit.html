@@ -1,0 +1,16 @@
+<f:layout name="Default"/>
+
+
+<f:section name="main">
+	FeUser: {feUser.username}
+
+	<h1>Edit MyData</h1>
+
+
+	<f:render partial="FormErrors" arguments="{object:MyData}"/>
+
+	<f:form action="update" enctype="multipart/form-data" name="myData" object="{myData}">
+		<f:render partial="MyData/FormFields" arguments="{myData:myData}"/>
+		<f:form.submit value="Save"/>
+	</f:form>
+</f:section>

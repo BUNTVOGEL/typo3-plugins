@@ -1,0 +1,6 @@
+table td, table th {
+	border: 2px solid #ccc;
+}
+table caption {
+	margin:0em;
+}

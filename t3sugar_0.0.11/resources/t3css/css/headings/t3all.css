@@ -1,0 +1,16 @@
+ h1,h2,h3,h4,h5,h6 { font-weight:bold; margin: 0 0 0.25em 0; }
+ h1 { font-size: 220%; }
+ h2 { font-size: 190%; }
+ h3 { font-size: 150%; }
+ h4 { font-size: 130%; }
+ h5 { font-size: 100%; }
+ h6 { font-size: 90%; }
+
+h1,h2,h3 {
+	margin:1em 0;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight:bold;
+}

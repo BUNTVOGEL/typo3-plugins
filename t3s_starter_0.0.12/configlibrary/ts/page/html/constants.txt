@@ -1,0 +1,45 @@
+#####################################################################
+##  Copyright notice
+##
+##  (c) 2007 Micha Barthel
+##  Contact:
+##  All rights reserved
+##
+## This library is free software; you can redistribute it and/or
+## modify it under the terms of the GNU Lesser General Public
+## License as published by the Free Software Foundation; either
+## version 2.1 of the License, or (at your option) any later version.
+##
+## This library is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+## Lesser General Public License for more details.
+##
+## You should have received a copy of the GNU Lesser General Public
+## License along with this library; if not, write to the Free Software
+## Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#####################################################################
+
+pageHtml{
+# cat=t3s_starter.pageHtml; type=string; label=typeNum : EXT:t3s_starter/typo3config/TS/html/page/
+  typeNum = 0
+# cat=t3s_starter.pageHtml; type=string; label=admPanelStyles : EXT:t3s_starter/typo3config/TS/html/page/
+  admPanelStyles = 1
+# cat=t3s_starter.theme.system; type=string; label=shortcutIcon : EXT:t3s_starter/typo3config/TS/html/page/
+  shortcutIcon = /resources/images/shortcutIcon.gif
+# cat=t3s_starter.pageHtml; type=string; label=config : EXT:t3s_starter/typo3config/TS/html/page/
+  config = lib.pageHtmlConfig
+# cat=t3s_starter.pageHtml; type=string; label=includeLibs : EXT:t3s_starter/typo3config/TS/html/page/
+  includeLibs = lib.pageHtmlIncludeLibs
+# cat=t3s_starter.pageHtml; type=string; label=includeCSS : EXT:t3s_starter/typo3config/TS/html/page/
+  includeCSS = lib.pageHtmlIncludeCss
+# cat=t3s_starter.pageHtml; type=string; label=includeJS : EXT:t3s_starter/typo3config/TS/html/page/
+  includeJS = lib.pageHtmlIncludeJs
+# cat=t3s_starter.pageHtml; type=string; label=meta : EXT:t3s_starter/typo3config/TS/html/page/
+  meta = lib.pageMeta
+# cat=t3s_starter.pageHtml; type=string; label=headerData : EXT:t3s_starter/typo3config/TS/html/page/
+  headerData = lib.pageHtmlHeader
+# cat=t3s_starter.pageHtml; type=string; label=PAGE COA 20 : EXT:t3s_starter/typo3config/TS/html/page/
+  20 = lib.template
+}
+

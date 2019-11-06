@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-11-19T11:15:57Z" product-name="superfasttypo3">
+		<header/>
+		<body>
+			<trans-unit id="tx_superfasttypo3_domain_model_superfasttypo3">
+				<source>Super Fast Typo3</source>
+			</trans-unit>
+			<trans-unit id="tx_superfasttypo3_domain_model_superfasttypo3.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_superfasttypo3_domain_model_superfasttypo3.version">
+				<source>Version</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

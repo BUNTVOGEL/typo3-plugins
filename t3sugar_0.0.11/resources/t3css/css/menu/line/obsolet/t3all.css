@@ -1,0 +1,41 @@
+.menu-line ul li .info,
+.menu-line ul li span.noanker,
+.menu-line ul li a
+{
+   padding: 0.5em 0.8em 0.5em 0.8em;
+}
+
+.menu-line ul li span.noanker,
+.menu-line ul li a,
+.menu-line .info,
+.menu-line ul li .info,
+.menu-line ul li
+{
+   font-size: 1em;
+}
+.menu-line ul li.current span.noanker,
+.menu-line ul li span.noanker,
+.menu-line ul li.current a,
+.menu-line ul li.current a:focus,
+.menu-line ul li.current a:hover,
+.menu-line ul li.current a:active{
+	color: #fff;
+}
+.menu-line ul li a:focus,
+.menu-line ul li a:hover,
+.menu-line ul li a:active,
+.menu-line ul li.current {
+  background: #ccc;
+}
+.menu-line ul li span.noanker,
+.menu-line ul li a {
+  font-weight: bold;
+}
+.menu-line .info
+{
+   line-height: 2em;
+}
+.menu-line ul li
+{
+   line-height: 1em;
+}

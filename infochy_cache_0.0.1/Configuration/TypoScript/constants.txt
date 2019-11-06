@@ -1,0 +1,30 @@
+
+plugin.tx_infochycache_fluid {
+	view {
+		# cat=plugin.tx_infochycache_fluid/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:infochy_cache/Resources/Private/Templates/
+		# cat=plugin.tx_infochycache_fluid/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:infochy_cache/Resources/Private/Partials/
+		# cat=plugin.tx_infochycache_fluid/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:infochy_cache/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_infochycache_fluid//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+plugin.tx_infochycache_model {
+	view {
+		# cat=plugin.tx_infochycache_model/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:infochy_cache/Resources/Private/Templates/
+		# cat=plugin.tx_infochycache_model/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:infochy_cache/Resources/Private/Partials/
+		# cat=plugin.tx_infochycache_model/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:infochy_cache/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_infochycache_model//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

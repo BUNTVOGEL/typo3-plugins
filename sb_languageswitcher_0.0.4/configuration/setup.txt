@@ -1,0 +1,192 @@
+includeLibs.tx_div = EXT:div/class.tx_div.php
+includeLibs.tx_sblanguageswitcher_controllers_languageSwitch = EXT:sb_languageswitcher/controllers/class.tx_sblanguageswitcher_controllers_languageSwitch.php
+plugin.tx_sblanguageswitcher_pi1.configuration{
+  validate{
+      // Diese IDs dürfen als Languageparameter nicht berücksichtigt werden im Array des Language-Selectors
+	  notInBuildArray = L,id
+	  // Get Parameter werden aus Sicherheitsgünden auf eine Zeichenlänge von 100 Zeichen begränzt
+	  parseStringLimit = 100
+  }
+  languages{
+      // Zeige mir nur die Links der anderen Sprachen an; nicht den Link zur Standart Sprache
+      showOnlyPassivLink = 1
+      // Auf dieser Seite wird kein Link angezeigt z.b 3,4,34
+      pidExcludeList =
+      // Link wird auch angezeigt, wenn es zu der aktuellen Seite keine Übersetzung gibt
+      // dann muss man jedoch zu einer Hauptseite springen die übersetzt ist!
+      contentFallBackUid =
+      // Der aktuelle Link der ausgewählten Sprache wird nicht einem <a> ausgeprägt
+      disableAktivLink = 1
+      // Bei einer Liste ist es Sinnvoll es mit einem UL zu Wrappen
+      wrapAll = <ul class="navi-lang">|</ul>
+      // Als erstes wird der Link mit der Sprache 0 ausgegeben
+      values{
+        0{
+            // Das Label wir dmit einem Anker umschlossen
+	        label = Deutsch
+	        // Wrapper
+	        wrap = <li>|</li>
+        }
+        1{
+           label = Englisch
+           wrap = <li>|</li>
+        }
+        2{
+           label = Französisch
+           wrap = <li>|</li>
+        }
+        3{
+           label = Spanisch
+           wrap = <li>|</li>
+        }
+        4{
+           label = Italienisch
+           wrap = <li>|</li>
+        }
+      }
+  }
+  // Datensätze haben eine Übersetzung und es soll bei Switchen die übersetzte Singelansicht angeziegt werden
+  recordTables{
+   /*
+     tt_news{
+        // Auf diesen Seiten ist eine Singleansicht
+        pid = 150,153,152,146,149
+        // tx_ttnews[uid] = designator[uniqueAlias]
+        designator = tt_news
+        // Das ist die default ID des Datensatzes....diese ID bleibt immer gleich
+        // Es wird jedoch überprüft, ob eine Übersetzung vorhanden ist
+        // andernfalls wird der Link nicht ausgeprägt
+        uniqueAlias = uid
+     }
+     tt_address{
+        pid = 155
+        designator = tt_address
+        uniqueAlias = uid
+     }
+  */
+  }
+}
+
+[globalVar = GP:L = 1]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      values{
+        0{
+            // Das Label wir mit einem Anker umschlossen
+	        label = German
+	        // Wrapper
+	        wrap = <li>|</li>
+        }
+        1{
+           label = English
+           wrap = <li>|</li>
+        }
+        2{
+           label = French
+           wrap = <li>|</li>
+        }
+        3{
+           label = Spanish
+           wrap = <li>|</li>
+        }
+        4{
+           label = 	Italian
+           wrap = <li>|</li>
+        }
+      }
+  }
+[global]
+[globalVar = GP:L = 2]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      values{
+        0{
+            // Das Label wir dmit einem Anker umschlossen
+	        label = Deutsch
+	        // Wrapper
+	        wrap = <li>|</li>
+        }
+        1{
+           label = Englisch
+           wrap = <li>|</li>
+        }
+        2{
+           label = Französisch
+           wrap = <li>|</li>
+        }
+        3{
+           label = Spanisch
+           wrap = <li>|</li>
+        }
+        4{
+           label = Italienisch
+           wrap = <li>|</li>
+        }
+      }
+  }
+[global]
+
+[globalVar = GP:L = 3]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      values{
+        0{
+            // Das Label wir dmit einem Anker umschlossen
+	        label = Deutsch
+	        // Wrapper
+	        wrap = <li>|</li>
+        }
+        1{
+           label = Englisch
+           wrap = <li>|</li>
+        }
+        2{
+           label = Französisch
+           wrap = <li>|</li>
+        }
+        3{
+           label = Spanisch
+           wrap = <li>|</li>
+        }
+        4{
+           label = Italienisch
+           wrap = <li>|</li>
+        }
+      }
+  }
+[global]
+
+[globalVar = GP:L = 4]
+plugin.tx_sblanguageswitcher_pi1.configuration.languages{
+      values{
+        0{
+            // Das Label wir dmit einem Anker umschlossen
+	        label = Deutsch
+	        // Wrapper
+	        wrap = <li>|</li>
+        }
+        1{
+           label = Englisch
+           wrap = <li>|</li>
+        }
+        2{
+           label = Französisch
+           wrap = <li>|</li>
+        }
+        3{
+           label = Spanisch
+           wrap = <li>|</li>
+        }
+        4{
+           label = Italienisch
+           wrap = <li>|</li>
+        }
+      }
+  }
+[global]
+plugin.tx_sblanguageswitcher.switchControllers < plugin.tx_sblanguageswitcher_pi1.configuration
+plugin.tx_sblanguageswitcher.switchControllers = USER_INT
+plugin.tx_sblanguageswitcher.switchControllers{
+		userFunc = tx_sblanguageswitcher_controllers_languageSwitch->main
+		action = languageSwitch
+		templatePath = EXT:sb_languageswitcher/templates
+		template = languageSwitch
+		setupPath = plugin.tx_sblanguageswitcher_pi1.configuration.
+}
